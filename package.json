@@ -1,0 +1,22 @@
+{
+  "name": "kia2.0",
+  "version": "2.0.0",
+  "description": "KIA US prototype",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashmca/kia2.git"
+  },
+  "keywords": [
+    "kia"
+  ],
+  "author": "shashank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashmca/kia2/issues"
+  },
+  "homepage": "https://github.com/shashmca/kia2#readme"
+}
