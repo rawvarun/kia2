@@ -78,7 +78,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\nexports.i(__webpack_require__(/*! -!../../node_modules/css-loader!../css/slick.scss */ \"./node_modules/css-loader/index.js!./src/css/slick.scss\"), \"\");\nexports.i(__webpack_require__(/*! -!../../node_modules/css-loader!../css/slick-theme.scss */ \"./node_modules/css-loader/index.js!./src/css/slick-theme.scss\"), \"\");\n\n// module\nexports.push([module.i, \"\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/css/index.css?./node_modules/css-loader");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\nexports.i(__webpack_require__(/*! -!../../node_modules/css-loader!../css/slick.scss */ \"./node_modules/css-loader/index.js!./src/css/slick.scss\"), \"\");\nexports.i(__webpack_require__(/*! -!../../node_modules/css-loader!../css/slick-theme.scss */ \"./node_modules/css-loader/index.js!./src/css/slick-theme.scss\"), \"\");\nexports.i(__webpack_require__(/*! -!../../node_modules/css-loader!../css/slider.scss */ \"./node_modules/css-loader/index.js!./src/css/slider.scss\"), \"\");\n\n// module\nexports.push([module.i, \"\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/css/index.css?./node_modules/css-loader");
 
 /***/ }),
 
@@ -101,6 +101,17 @@ eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"/* Slider */\\n\\n.slick-slider {\\n    position: relative;\\n    display: block;\\n    box-sizing: border-box;\\n    -webkit-touch-callout: none;\\n    -webkit-user-select: none;\\n    -khtml-user-select: none;\\n    -moz-user-select: none;\\n    -ms-user-select: none;\\n    user-select: none;\\n    -ms-touch-action: pan-y;\\n    touch-action: pan-y;\\n    -webkit-tap-highlight-color: transparent;\\n}\\n.slick-list {\\n    position: relative;\\n    overflow: hidden;\\n    display: block;\\n    margin: 0;\\n    padding: 0;\\n\\n    &:focus {\\n        outline: none;\\n    }\\n\\n    &.dragging {\\n        cursor: pointer;\\n        cursor: hand;\\n    }\\n}\\n.slick-slider .slick-track,\\n.slick-slider .slick-list {\\n    -webkit-transform: translate3d(0, 0, 0);\\n    -moz-transform: translate3d(0, 0, 0);\\n    -ms-transform: translate3d(0, 0, 0);\\n    -o-transform: translate3d(0, 0, 0);\\n    transform: translate3d(0, 0, 0);\\n}\\n\\n.slick-track {\\n    position: relative;\\n    left: 0;\\n    top: 0;\\n    display: block;\\n    margin-left: auto;\\n    margin-right: auto;\\n\\n    &:before,\\n    &:after {\\n        content: \\\"\\\";\\n        display: table;\\n    }\\n\\n    &:after {\\n        clear: both;\\n    }\\n\\n    .slick-loading & {\\n        visibility: hidden;\\n    }\\n}\\n.slick-slide {\\n    float: left;\\n    height: 100%;\\n    min-height: 1px;\\n    [dir=\\\"rtl\\\"] & {\\n        float: right;\\n    }\\n    img {\\n        display: block;\\n    }\\n    &.slick-loading img {\\n        display: none;\\n    }\\n\\n    display: none;\\n\\n    &.dragging img {\\n        pointer-events: none;\\n    }\\n\\n    .slick-initialized & {\\n        display: block;\\n    }\\n\\n    .slick-loading & {\\n        visibility: hidden;\\n    }\\n\\n    .slick-vertical & {\\n        display: block;\\n        height: auto;\\n        border: 1px solid transparent;\\n    }\\n}\\n.slick-arrow.slick-hidden {\\n    display: none;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/css/slick.scss?./node_modules/css-loader");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./src/css/slider.scss":
+/*!*******************************************************!*\
+  !*** ./node_modules/css-loader!./src/css/slider.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/css/slider.scss?./node_modules/css-loader");
 
 /***/ }),
 
