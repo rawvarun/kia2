@@ -1,2 +1,1 @@
-import '../css/*.css';
-import './vendor/*.js';
+console.log('hello');
