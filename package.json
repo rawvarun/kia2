@@ -4,7 +4,8 @@
   "description": "KIA US prototype",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/shashmca/kia2/issues"
   },
-  "homepage": "https://github.com/shashmca/kia2#readme"
+  "homepage": "https://github.com/shashmca/kia2#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.1.0",
+    "eslint-loader": "^2.0.0",
+    "jshint": "^2.9.5",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0"
+  }
 }
