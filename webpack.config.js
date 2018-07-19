@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [{
         test: /\.js$/, // include .js files
-        enforce: "pre", // preload the jshint loader
+        enforce: "pre", // preload the eslint loader
         exclude: [/node_modules/, './src/js/vendor'], // exclude any and all files in the node_modules folder
         use: [{
           loader: "eslint-loader",
@@ -44,6 +44,10 @@ module.exports = {
           "css-loader", // translates CSS into CommonJS
           "sass-loader" // compiles Sass to CSS
         ]
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'file?name=src/css/fonts/[name].[ext]'
       }
     ]
   },
