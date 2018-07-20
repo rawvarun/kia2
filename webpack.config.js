@@ -47,8 +47,12 @@ module.exports = {
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
-        loader: 'file?name=src/css/fonts/[name].[ext]'
+        loader: 'file-loader?name=src/css/fonts/[name].[ext]'
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        loader: 'file-loader?name=[hash].[ext]&outputPath=../assets/images/&publicPath=assets/images/'
       }
     ]
-  },
+  }
 };
