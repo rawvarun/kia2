@@ -23,15 +23,43 @@
         .btn {
             background: transparent;
             text-transform: capitalize;
+            font-family: designk-bold;
+            font-size: 16px;
+            line-height: 24px;
         }
         
         .btn.border-grey {
             border: 1px solid grey;
+            font-family: designk-bold;
+            font-size: 16px;
+            line-height: 24px;
         }
         
         .list-item {
             background: #fff;
             height: 200px;
+        }
+        
+        .dd-check a {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        i {
+            font-size: 10px;
+            padding: 0 5px;
+        }
+        
+        .dd-check a i {
+            top: 12px;
+            left: 14px;
+            font-size: 10px;
+            position: absolute;
+        }
+        
+        .dd-check a:hover i:before {
+            content: '\e033';
+            color: red;
         }
     </style>
 </head>
@@ -60,7 +88,7 @@
                                 <a class="dropdown-item" href="#">Link 3</a>
                             </div>
                         </div>
-                        <div class="float-sm-left"><span class="btn animated slideInUp">Clear filter</span></div>
+                        <div class="float-sm-left"><span class="btn animated slideInUp"><i class="oi oi-reload"></i>Clear filter</span></div>
                         <div class="float-sm-right ml-3">
                             <button type="button" class="btn border-grey rounded-0  animated slideInUp" data-toggle="dropdown">
                                 Map View
@@ -71,16 +99,217 @@
                             <button type="button" class="btn border-grey dropdown-toggle rounded-0  animated slideInUp" data-toggle="dropdown">
                                 Sort by
                             </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
+                            <div class="dropdown-menu dd-check">
+                                <a class="dropdown-item" href="#"><i class="oi" aria-hidden="true"></i>Distance</a>
+                                <a class="dropdown-item" href="#"><i class="oi" aria-hidden="true"></i>Highest Price</a>
+                                <a class="dropdown-item" href="#"><i class="oi" aria-hidden="true"></i>Lowest Price</a>
                             </div>
                         </div>
 
                     </div>
                 </div>
 
+                <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <b>Kia Downtown Los Angeles (6 mi)</b>
+                        <span>Packages & Otions</span>
+                        <ul class="list-group">
+                            <li class="list-group-item">LX Convenience Package</li>
+                            <li class="list-group-item">LX Premium Package</li>
+                            <li class="list-group-item">Carpeted Floor Mats</li>
+                            <li class="list-group-item">Ventilated Front Seat</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
+                        Get a Quote
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                        Calculate Payments
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                            Chat with Dealer
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <b>Kia Downtown Los Angeles (6 mi)</b>
+                        <span>Packages & Otions</span>
+                        <ul class="list-group">
+                            <li class="list-group-item">LX Convenience Package</li>
+                            <li class="list-group-item">LX Premium Package</li>
+                            <li class="list-group-item">Carpeted Floor Mats</li>
+                            <li class="list-group-item">Ventilated Front Seat</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
+                        Get a Quote
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                        Calculate Payments
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                            Chat with Dealer
+                        </button>
+                    </div>
+                </div>
+                <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <b>Kia Downtown Los Angeles (6 mi)</b>
+                        <span>Packages & Otions</span>
+                        <ul class="list-group">
+                            <li class="list-group-item">LX Convenience Package</li>
+                            <li class="list-group-item">LX Premium Package</li>
+                            <li class="list-group-item">Carpeted Floor Mats</li>
+                            <li class="list-group-item">Ventilated Front Seat</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
+                        Get a Quote
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                        Calculate Payments
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                            Chat with Dealer
+                        </button>
+                    </div>
+                </div>
+                <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <b>Kia Downtown Los Angeles (6 mi)</b>
+                        <span>Packages & Otions</span>
+                        <ul class="list-group">
+                            <li class="list-group-item">LX Convenience Package</li>
+                            <li class="list-group-item">LX Premium Package</li>
+                            <li class="list-group-item">Carpeted Floor Mats</li>
+                            <li class="list-group-item">Ventilated Front Seat</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
+                        Get a Quote
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                        Calculate Payments
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                            Chat with Dealer
+                        </button>
+                    </div>
+                </div>
+                <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <b>Kia Downtown Los Angeles (6 mi)</b>
+                        <span>Packages & Otions</span>
+                        <ul class="list-group">
+                            <li class="list-group-item">LX Convenience Package</li>
+                            <li class="list-group-item">LX Premium Package</li>
+                            <li class="list-group-item">Carpeted Floor Mats</li>
+                            <li class="list-group-item">Ventilated Front Seat</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
+                        Get a Quote
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                        Calculate Payments
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                            Chat with Dealer
+                        </button>
+                    </div>
+                </div>
+                <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <b>Kia Downtown Los Angeles (6 mi)</b>
+                        <span>Packages & Otions</span>
+                        <ul class="list-group">
+                            <li class="list-group-item">LX Convenience Package</li>
+                            <li class="list-group-item">LX Premium Package</li>
+                            <li class="list-group-item">Carpeted Floor Mats</li>
+                            <li class="list-group-item">Ventilated Front Seat</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
+                        Get a Quote
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                        Calculate Payments
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                            Chat with Dealer
+                        </button>
+                    </div>
+                </div>
+                <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <b>Kia Downtown Los Angeles (6 mi)</b>
+                        <span>Packages & Otions</span>
+                        <ul class="list-group">
+                            <li class="list-group-item">LX Convenience Package</li>
+                            <li class="list-group-item">LX Premium Package</li>
+                            <li class="list-group-item">Carpeted Floor Mats</li>
+                            <li class="list-group-item">Ventilated Front Seat</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
+                        Get a Quote
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                        Calculate Payments
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                            Chat with Dealer
+                        </button>
+                    </div>
+                </div>
+                <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <b>Kia Downtown Los Angeles (6 mi)</b>
+                        <span>Packages & Otions</span>
+                        <ul class="list-group">
+                            <li class="list-group-item">LX Convenience Package</li>
+                            <li class="list-group-item">LX Premium Package</li>
+                            <li class="list-group-item">Carpeted Floor Mats</li>
+                            <li class="list-group-item">Ventilated Front Seat</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
+                        Get a Quote
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                        Calculate Payments
+                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                            Chat with Dealer
+                        </button>
+                    </div>
+                </div>
                 <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
                     <div class="col-sm-4">
                     </div>
