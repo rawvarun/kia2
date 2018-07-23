@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'founders-grotesk-bold';
+    src: url("./fonts/foundersgrotesk-bold.woff2") format("woff2"), url("/prototypes/assets/fonts/foundersgrotesk-bold.woff") format("woff"), url("/prototypes/assets/fonts/foundersgrotesk-bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'founders-grotesk-regular';
+    src: url("./fonts/foundersgrotesk-regular.woff2") format("woff2"), url("/prototypes/assets/fonts/foundersgrotesk-regular.woff") format("woff"), url("/prototypes/assets/fonts/foundersgrotesk-regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'founders-grotesk-light';
+    src: url("./fonts/foundersgrotesk-light.woff2") format("woff2"), url("/prototypes/assets/fonts/foundersgrotesk-light.woff") format("woff"), url("/prototypes/assets/fonts/foundersgrotesk-light.ttf") format("truetype");
+    font-weight: light;
+}
+
+@font-face {
+    font-family: 'founders-grotesk-medium';
+    src: url("./fonts/foundersgrotesk-medium.woff2") format("woff2"), url("/prototypes/assets/fonts/foundersgrotesk-medium.woff") format("woff"), url("/prototypes/assets/fonts/foundersgrotesk-medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'designk-bold';
+    src: url("./fonts/designk_bold.otf");
+}
+
+@font-face {
+    font-family: 'designk-medium';
+    src: url("./fonts/designk_medium.otf");
+}
+
+@font-face {
+    font-family: 'graphik-regular';
+    src: url("./fonts/Graphik-Regular.otf");
+}
+
+@font-face {
+    font-family: 'graphik-semibold';
+    src: url("./fonts/Graphik-Semibold.otf");
+}
+
+@font-face {
+    font-family: 'graphik-bold';
+    src: url("./fonts/Graphik-Bold.otf");
+}
