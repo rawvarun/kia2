@@ -1,4 +1,4 @@
-@import './slick.scss';
-@import './slick-theme.scss';
-@import './slider.scss';
-@import './animate.scss';
+//@import "bootstrap-sprockets";
+//$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap/scss/bootstrap.scss';
+@import './vendor/_import.scss';
