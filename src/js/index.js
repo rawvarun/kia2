@@ -13,5 +13,9 @@ $(function() {
       selectedRange = '$' + (input.valueLow * 1000) + '-' + '$' + (input.valueHigh * 1000);
       $('.js-range-val').text(selectedRange);
     }
+  });
+
+  $('[data-toggle]').on('click', function() {
+    $(this).closest('.list-item').toggleClass('expanded-list')
   })
 })

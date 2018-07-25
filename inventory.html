@@ -15,11 +15,12 @@
 <body>
     <div class="container-fluid">
         <header class="w-100">
-            <h1>Header</h1>
+            <h1>Header <a class="visible-xs float-right mr-5 font-0 hamburger-container" data-toggle="collapse" href="#filterpanel" role="button" aria-expanded="false" aria-controls="filterpanel">hamburger<i class="oi oi-menu hamburger"></i></a></h1>
+
         </header>
-        <hr class="margin-bottom-0" />
+        <!-- <hr class="margin-bottom-0" /> -->
         <div class="row">
-            <div class="col-sm-3 facets-container">
+            <div class="col-sm-3 facets-container collapse animated slideInRight" id="filterpanel">
                 <div class="row">
                     <div class="col-sm-3  mt-5 mb-5">
                     </div>
@@ -78,8 +79,8 @@
             <div class="col-sm-9 inventory-container">
                 <div class="row">
                     <div class="col-sm-12  mt-5 mb-5">
-                        <div class="dropdown float-sm-left">
-                            <button type="button" class="btn border-grey dropdown-toggle rounded-0  animated slideInUp" data-toggle="dropdown">
+                        <div class="dropdown float-sm-left hidden-xs">
+                            <button type="button" class="btn border-grey dropdown-toggle rounded-0  animated slideInUp w-100" data-toggle="dropdown">
                               4 Filters selected
                             </button>
                             <div class="dropdown-menu">
@@ -88,14 +89,14 @@
                                 <a class="dropdown-item" href="#">Link 3</a>
                             </div>
                         </div>
-                        <div class="float-sm-left"><span class="btn animated slideInUp"><i class="oi oi-reload"></i>Clear filter</span></div>
-                        <div class="float-sm-right ml-3">
-                            <button type="button" class="btn border-grey rounded-0  animated slideInUp" data-toggle="dropdown">
+                        <div class="float-sm-left  hidden-xs"><span class="btn animated slideInUp"><i class="oi oi-reload"></i>Clear filter</span></div>
+                        <div class="float-sm-right float-xs-right ml-3 w-xs-45">
+                            <button type="button" class="btn border-grey rounded-0  animated slideInUp w-100" data-toggle="dropdown">
                                 Map View
                             </button>
 
                         </div>
-                        <div class="dropdown float-sm-right">
+                        <div class="dropdown float-sm-right w-xs-45 float-xs-left">
                             <button type="button" class="btn border-grey dropdown-toggle rounded-0  animated slideInUp" data-toggle="dropdown">
                                 Sort by
                             </button>
@@ -116,22 +117,35 @@
                         <b>Kia Downtown Los Angeles (6 mi)</b>
                         <span>Packages & Otions</span>
                         <ul class="list-group">
-                            <li class="list-group-item">LX Convenience Package</li>
-                            <li class="list-group-item">LX Premium Package</li>
-                            <li class="list-group-item">Carpeted Floor Mats</li>
-                            <li class="list-group-item">Ventilated Front Seat</li>
+                            <li class="list-group-item">LX Convenience Package<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">LX Premium Package<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">Carpeted Floor Mats<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">Ventilated Front Seat<i class="oi oi-info" aria-hidden="true"></i></li>
                         </ul>
+                        <a class="btn" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                                More details <i class="oi oi-chevron-top"></i>
+                              </a>
                     </div>
                     <div class="col-sm-4">
-                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white hidden-xs">
                         Get a Quote
                     </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                        <button type="button" class="btn border-grey rounded-0 btn-block hidden-xs">
                         Calculate Payments
                     </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
+                        <button type="button" class="btn border-grey rounded-0 btn-block hidden-xs">
                             Chat with Dealer
                         </button>
+                    </div>
+                    <div class="col-sm-12 pl-0 pr-0 ">
+                        <div class="collapse mb-3" id="collapseExample1">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                        </div>
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white visible-xs">
+                                Get a Quote
+                            </button>
                     </div>
                 </div>
 
@@ -142,22 +156,35 @@
                         <b>Kia Downtown Los Angeles (6 mi)</b>
                         <span>Packages & Otions</span>
                         <ul class="list-group">
-                            <li class="list-group-item">LX Convenience Package</li>
-                            <li class="list-group-item">LX Premium Package</li>
-                            <li class="list-group-item">Carpeted Floor Mats</li>
-                            <li class="list-group-item">Ventilated Front Seat</li>
+                            <li class="list-group-item">LX Convenience Package<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">LX Premium Package<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">Carpeted Floor Mats<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">Ventilated Front Seat<i class="oi oi-info" aria-hidden="true"></i></li>
                         </ul>
+                        <a class="btn" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                                    More details <i class="oi oi-chevron-top"></i>
+                                  </a>
                     </div>
                     <div class="col-sm-4">
-                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
-                        Get a Quote
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                        Calculate Payments
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                            Chat with Dealer
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white hidden-xs">
+                            Get a Quote
                         </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block hidden-xs">
+                            Calculate Payments
+                        </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block hidden-xs">
+                                Chat with Dealer
+                            </button>
+                    </div>
+                    <div class="col-sm-12 pl-0 pr-0 ">
+                        <div class="collapse mb-3" id="collapseExample2">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                        </div>
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white visible-xs">
+                                    Get a Quote
+                                </button>
                     </div>
                 </div>
                 <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
@@ -167,22 +194,35 @@
                         <b>Kia Downtown Los Angeles (6 mi)</b>
                         <span>Packages & Otions</span>
                         <ul class="list-group">
-                            <li class="list-group-item">LX Convenience Package</li>
-                            <li class="list-group-item">LX Premium Package</li>
-                            <li class="list-group-item">Carpeted Floor Mats</li>
-                            <li class="list-group-item">Ventilated Front Seat</li>
+                            <li class="list-group-item">LX Convenience Package<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">LX Premium Package<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">Carpeted Floor Mats<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">Ventilated Front Seat<i class="oi oi-info" aria-hidden="true"></i></li>
                         </ul>
+                        <a class="btn" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                                        More details <i class="oi oi-chevron-top"></i>
+                                      </a>
                     </div>
                     <div class="col-sm-4">
-                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
-                        Get a Quote
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                        Calculate Payments
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                            Chat with Dealer
-                        </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white hidden-xs">
+                                Get a Quote
+                            </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block hidden-xs">
+                                Calculate Payments
+                            </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block hidden-xs">
+                                    Chat with Dealer
+                                </button>
+                    </div>
+                    <div class="col-sm-12 pl-0 pr-0 ">
+                        <div class="collapse mb-3" id="collapseExample3">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                        </div>
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white visible-xs">
+                                        Get a Quote
+                                    </button>
                     </div>
                 </div>
                 <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
@@ -192,22 +232,35 @@
                         <b>Kia Downtown Los Angeles (6 mi)</b>
                         <span>Packages & Otions</span>
                         <ul class="list-group">
-                            <li class="list-group-item">LX Convenience Package</li>
-                            <li class="list-group-item">LX Premium Package</li>
-                            <li class="list-group-item">Carpeted Floor Mats</li>
-                            <li class="list-group-item">Ventilated Front Seat</li>
+                            <li class="list-group-item">LX Convenience Package<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">LX Premium Package<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">Carpeted Floor Mats<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">Ventilated Front Seat<i class="oi oi-info" aria-hidden="true"></i></li>
                         </ul>
+                        <a class="btn" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                            More details <i class="oi oi-chevron-top"></i>
+                                          </a>
                     </div>
                     <div class="col-sm-4">
-                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
-                        Get a Quote
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                        Calculate Payments
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                            Chat with Dealer
-                        </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white hidden-xs">
+                                    Get a Quote
+                                </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block hidden-xs">
+                                    Calculate Payments
+                                </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block hidden-xs">
+                                        Chat with Dealer
+                                    </button>
+                    </div>
+                    <div class="col-sm-12 pl-0 pr-0 ">
+                        <div class="collapse mb-3" id="collapseExample4">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                        </div>
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white visible-xs">
+                                            Get a Quote
+                                        </button>
                     </div>
                 </div>
                 <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
@@ -217,122 +270,35 @@
                         <b>Kia Downtown Los Angeles (6 mi)</b>
                         <span>Packages & Otions</span>
                         <ul class="list-group">
-                            <li class="list-group-item">LX Convenience Package</li>
-                            <li class="list-group-item">LX Premium Package</li>
-                            <li class="list-group-item">Carpeted Floor Mats</li>
-                            <li class="list-group-item">Ventilated Front Seat</li>
+                            <li class="list-group-item">LX Convenience Package<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">LX Premium Package<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">Carpeted Floor Mats<i class="oi oi-info" aria-hidden="true"></i></li>
+                            <li class="list-group-item">Ventilated Front Seat<i class="oi oi-info" aria-hidden="true"></i></li>
                         </ul>
+                        <a class="btn" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+                                                More details <i class="oi oi-chevron-top"></i>
+                                              </a>
                     </div>
                     <div class="col-sm-4">
-                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
-                        Get a Quote
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                        Calculate Payments
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                            Chat with Dealer
-                        </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white hidden-xs">
+                                        Get a Quote
+                                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block hidden-xs">
+                                        Calculate Payments
+                                    </button>
+                        <button type="button" class="btn border-grey rounded-0 btn-block hidden-xs">
+                                            Chat with Dealer
+                                        </button>
                     </div>
-                </div>
-                <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-4">
-                        <b>Kia Downtown Los Angeles (6 mi)</b>
-                        <span>Packages & Otions</span>
-                        <ul class="list-group">
-                            <li class="list-group-item">LX Convenience Package</li>
-                            <li class="list-group-item">LX Premium Package</li>
-                            <li class="list-group-item">Carpeted Floor Mats</li>
-                            <li class="list-group-item">Ventilated Front Seat</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4">
-                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
-                        Get a Quote
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                        Calculate Payments
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                            Chat with Dealer
-                        </button>
-                    </div>
-                </div>
-                <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-4">
-                        <b>Kia Downtown Los Angeles (6 mi)</b>
-                        <span>Packages & Otions</span>
-                        <ul class="list-group">
-                            <li class="list-group-item">LX Convenience Package</li>
-                            <li class="list-group-item">LX Premium Package</li>
-                            <li class="list-group-item">Carpeted Floor Mats</li>
-                            <li class="list-group-item">Ventilated Front Seat</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4">
-                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
-                        Get a Quote
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                        Calculate Payments
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                            Chat with Dealer
-                        </button>
-                    </div>
-                </div>
-                <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-4">
-                        <b>Kia Downtown Los Angeles (6 mi)</b>
-                        <span>Packages & Otions</span>
-                        <ul class="list-group">
-                            <li class="list-group-item">LX Convenience Package</li>
-                            <li class="list-group-item">LX Premium Package</li>
-                            <li class="list-group-item">Carpeted Floor Mats</li>
-                            <li class="list-group-item">Ventilated Front Seat</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4">
-                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
-                        Get a Quote
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                        Calculate Payments
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                            Chat with Dealer
-                        </button>
-                    </div>
-                </div>
-                <div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-4">
-                        <b>Kia Downtown Los Angeles (6 mi)</b>
-                        <span>Packages & Otions</span>
-                        <ul class="list-group">
-                            <li class="list-group-item">LX Convenience Package</li>
-                            <li class="list-group-item">LX Premium Package</li>
-                            <li class="list-group-item">Carpeted Floor Mats</li>
-                            <li class="list-group-item">Ventilated Front Seat</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4">
-                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white">
-                        Get a Quote
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                        Calculate Payments
-                    </button>
-                        <button type="button" class="btn border-grey rounded-0 btn-block">
-                            Chat with Dealer
-                        </button>
+                    <div class="col-sm-12 pl-0 pr-0 ">
+                        <div class="collapse mb-3" id="collapseExample5">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                        </div>
+                        <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white visible-xs">
+                                                Get a Quote
+                                            </button>
                     </div>
                 </div>
             </div>
