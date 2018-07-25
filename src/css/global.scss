@@ -1,0 +1,30 @@
+.underline {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background-color: $kia-red;
+        bottom: -8px;
+        left: 0;
+        transition: width ease-in-out 0.3s;
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width:767px) {
+    .visible-xs {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .hidden-xs {
+        display: none;
+    }
+}
