@@ -1,0 +1,186 @@
+header {
+    height: 50px;
+    background-color: transparent;
+    position: fixed;
+    max-height: 100%;
+    width: 100%;
+    z-index: 1;
+    color: $light-background;
+    border-bottom: 1px solid $gray-UI;
+    .kia-logo {
+        height: 30px;
+    }
+    &.theme {
+        background-color: $light-background;
+        color: $black;
+    }
+    a {
+        color: inherit;
+        &:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    @media screen and (max-width:767px) {
+        padding: 10px 0;
+    }
+}
+
+nav {
+    max-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+ul.navigation {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 40%;
+    padding: 10px 0;
+    text-align: left;
+    li {
+        list-style: none;
+        display: inline;
+        padding: 0 15px;
+    }
+    &.secondary-nav {
+        text-align: right;
+        li:last-child {
+            border-left: 2px solid $kia-red;
+        }
+    }
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}
+
+.toggle-nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    z-index: 1;
+}
+
+// .mobile-bar {
+//     z-index: 5;
+//     position: relative;
+//     height: 60px;
+//     background-color: #E53935;
+//     -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+//     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+// }
+// .mobile-bar label {
+//     position: absolute;
+//     top: 0;
+//     left: 10px;
+//     width: 60px;
+//     height: 60px;
+//     text-align: center;
+//     cursor: pointer;
+//     -webkit-transition: -webkit-transform 500ms ease;
+//     transition: -webkit-transform 500ms ease;
+//     transition: transform 500ms ease;
+//     transition: transform 500ms ease, -webkit-transform 500ms ease;
+// }
+// .mobile-bar label:after {
+//     content: "\2630";
+//     font-size: 2em;
+//     color: #eee;
+//     line-height: 60px;
+//     -webkit-backface-visibility: hidden;
+//     backface-visibility: hidden;
+//     -webkit-transition: 500ms ease;
+//     transition: 500ms ease;
+// }
+// .toggle-nav:checked~.menu-container {
+//     /* when the checkbox is checked the container slide-down */
+//     -webkit-transform: translateY(270px);
+//     transform: translateY(270px);
+//     -webkit-transform: translate3d(0, 270px, 0);
+//     transform: translate3d(0, 270px, 0);
+// }
+// .toggle-nav:checked+.mobile-bar label {
+//     -webkit-transform: rotate(180deg);
+//     transform: rotate(180deg);
+// }
+// .toggle-nav:checked+.mobile-bar label:after {
+//     color: black;
+// }
+.nav-icon1 {
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    top: -100%;
+    right: 10px;
+    margin: 50px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: $light-background;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    .theme & {
+        background-color: $black;
+    }
+}
+
+.nav-icon1 span:nth-child(1) {
+    top: 18px;
+}
+
+.nav-icon1 span:nth-child(2) {
+    top: 30px;
+}
+
+.toggle-nav:checked+.nav-icon1 {
+    span:nth-child(1) {
+        top: 24px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    span:nth-child(2) {
+        top: 24px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+}
+
+.menu-container {
+    transform: translateY(calc(-100% - 50px));
+    transition: transform ease-in-out 0.5s;
+}
+
+.toggle-nav:checked~.menu-container {
+    transform: 0;
+    background-color: $light-background;
+}

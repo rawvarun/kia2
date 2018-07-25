@@ -1,4 +1,7 @@
 //@import "bootstrap-sprockets";
 //$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import './colors.scss';
 @import '~bootstrap/scss/bootstrap.scss';
 @import './vendor/_import.scss';
+@import './global.scss';
+@import './header.scss';
