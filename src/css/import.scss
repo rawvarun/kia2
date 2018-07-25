@@ -5,3 +5,96 @@
 @import './vendor/_import.scss';
 @import './global.scss';
 @import './header.scss';
+html,
+body {
+    font-family: designk-regular;
+}
+
+.container-fluid .row {
+    margin: 0;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.inventory-container {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+    background: transparent;
+    text-transform: capitalize;
+    font-family: designk-bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btn.border-grey {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    font-family: designk-bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.list-item {
+    background: #fff;
+    height: 200px;
+}
+
+.dd-check a {
+    position: relative;
+    padding-left: 30px;
+}
+
+i {
+    font-size: 10px;
+    padding: 0 5px;
+}
+
+.dd-check a i {
+    top: 12px;
+    left: 14px;
+    font-size: 10px;
+    position: absolute;
+}
+
+.dd-check a:hover i:before {
+    content: '\e033';
+    color: red;
+}
+
+.form-control.radius-0 {
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.facets-container :input {
+    width: 100%;
+}
+
+.facets-container .dropdown button {
+    text-align: left;
+}
+
+.facets-container .dropdown button:after {
+    right: 20px;
+    position: absolute;
+    TOP: 14px;
+}
+
+.range-container {
+    position: relative;
+}
+
+.range-val {
+    display: block;
+}
+
+.grey-text {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.info-text {
+    font-size: 12px;
+}
