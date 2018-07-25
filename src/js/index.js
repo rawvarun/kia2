@@ -18,4 +18,10 @@ $(function() {
   $('[data-toggle]').on('click', function() {
     $(this).closest('.list-item').toggleClass('expanded-list')
   })
+
+  $('.js-list-model-carousel').slick({
+    arrows: false,
+    dots: true
+
+  });
 })
