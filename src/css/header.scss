@@ -176,11 +176,33 @@ ul.navigation {
 }
 
 .menu-container {
-    transform: translateY(calc(-100% - 50px));
-    transition: transform ease-in-out 0.5s;
+    display: block;
+    height: 0;
+    transition: height ease-in-out 0.5s;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    clear: both;
+    ul {
+        padding: 0;
+        margin: 0;
+        width: 50%;
+        float: left;
+        display: block;
+        height: 0;
+        li {
+            list-style: none;
+            display: block;
+        }
+    }
 }
 
 .toggle-nav:checked~.menu-container {
-    transform: 0;
+    height: 100%;
     background-color: $light-background;
+    color: $black;
+    transition: height ease-in-out 0.5s;
+    ul {
+        height: 100%;
+    }
 }
