@@ -8,59 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-        .container-fluid .row {
-            margin: 0;
-        }
-        
-        .margin-bottom-0 {
-            margin-bottom: 0;
-        }
-        
-        .inventory-container {
-            background: rgba(0, 0, 0, 0.05);
-        }
-        
-        .btn {
-            background: transparent;
-            text-transform: capitalize;
-            font-family: designk-bold;
-            font-size: 16px;
-            line-height: 24px;
-        }
-        
-        .btn.border-grey {
-            border: 1px solid grey;
-            font-family: designk-bold;
-            font-size: 16px;
-            line-height: 24px;
-        }
-        
-        .list-item {
-            background: #fff;
-            height: 200px;
-        }
-        
-        .dd-check a {
-            position: relative;
-            padding-left: 30px;
-        }
-        
-        i {
-            font-size: 10px;
-            padding: 0 5px;
-        }
-        
-        .dd-check a i {
-            top: 12px;
-            left: 14px;
-            font-size: 10px;
-            position: absolute;
-        }
-        
-        .dd-check a:hover i:before {
-            content: '\e033';
-            color: red;
-        }
+
     </style>
 </head>
 
@@ -72,8 +20,60 @@
         <hr class="margin-bottom-0" />
         <div class="row">
             <div class="col-sm-3 facets-container">
-                One of three columns<br />
-                <input id="ex2" type="range" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" /> <b>€ 1000</b>
+                <div class="row">
+                    <div class="col-sm-3  mt-5 mb-5">
+                    </div>
+                    <div class="col-sm-9  mt-5 mb-5">
+                        <b>Find the perfect match</b>
+                        <div class="form-group mt-3 mb-0">
+                            <input type="text" class="form-control radius-0" id="usr" aria-label="zip code" placeholder="zip" />
+                        </div>
+                        <div class="dropdown float-sm-left w-100 mt-3">
+                            <button type="button" class="btn border-grey dropdown-toggle w-100 rounded-0  animated slideInUp" data-toggle="dropdown">
+                                      Within 15 Miles
+                                    </button>
+                            <div class="dropdown-menu w-100">
+                                <a class="dropdown-item" href="#">Within 5 Miles</a>
+                                <a class="dropdown-item" href="#">Within 10 Miles</a>
+                                <a class="dropdown-item" href="#">Within 15 Miles</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown float-sm-left w-100 mt-3">
+                            <button type="button" class="btn border-grey dropdown-toggle w-100 rounded-0  animated slideInUp" data-toggle="dropdown">
+                                              Sorento
+                                            </button>
+                            <div class="dropdown-menu w-100">
+                                <a class="dropdown-item" href="#">Sedona</a>
+                                <a class="dropdown-item" href="#">Sorento</a>
+                                <a class="dropdown-item" href="#">Sportage</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown float-sm-left w-100 mt-3">
+                            <button type="button" class="btn border-grey dropdown-toggle w-100 rounded-0  animated slideInUp" data-toggle="dropdown">
+                                                  2018
+                                                </button>
+                            <div class="dropdown-menu w-100">
+                                <a class="dropdown-item" href="#">2018</a>
+                                <a class="dropdown-item" href="#">2019</a>
+                            </div>
+                        </div>
+                        <div class="form-group float-sm-left w-100 mt-5 mb-0 range-container ">
+                            <span class="js-range-val range-val">$10,000-$100,000</span>
+                            <input type="range" multiple value="0,100" class="w-100" />
+                        </div>
+                        <hr class="float-sm-left w-100" />
+                        <h3 class="w-100 ">Trims</h3>
+                        <span>Compare Trims</span>
+                        <div class="form-check-inline w-100">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input mr-2" value="">L
+                              <p class="ml-4 info-text grey-text">$25,990 starting MSRP*</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-9 inventory-container">
                 <div class="row">
