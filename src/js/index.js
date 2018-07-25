@@ -22,6 +22,5 @@ $(function() {
   $('.js-list-model-carousel').slick({
     arrows: false,
     dots: true
-
   });
 })
