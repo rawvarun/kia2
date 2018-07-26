@@ -8,17 +8,18 @@
     @import './homeBanner.scss';
     @import './homeCarousels.scss';
     @import './footer.scss';
+    *,
     html,
     body {
         font-family: designk-regular;
     }
-
+    
     .error-msg {
         background: #fff;
         font-size: 18px;
         color: #C21B31;
     }
-
+    
     .loader {
         border: 8px solid #fce4e4;
         border-radius: 50%;
@@ -30,9 +31,8 @@
         animation: spin 2s linear infinite;
         margin: auto;
     }
-
     /* Safari */
-
+    
     @-webkit-keyframes spin {
         0% {
             -webkit-transform: rotate(0deg);
@@ -41,7 +41,7 @@
             -webkit-transform: rotate(360deg);
         }
     }
-
+    
     @keyframes spin {
         0% {
             transform: rotate(0deg);
@@ -50,34 +50,77 @@
             transform: rotate(360deg);
         }
     }
-
+    
+    .selected-filters i {
+        color: rgba(0, 0, 0, 0.25);
+        line-height: 16px;
+        font-size: 10px;
+        vertical-align: text-top;
+    }
+    
+    .hamburger-ul {
+        max-width: 30px;
+        list-style-type: none;
+    }
+    
+    .slick-controllers {
+        list-style-type: none;
+    }
+    
+    .slick-controllers li {
+        display: inline-block;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    
+    .icon-blue {
+        background: #495672;
+        width: 20px;
+        height: 20px;
+        border-radius: 12px;
+    }
+    
+    .icon-grey {
+        background: #99989E;
+        width: 20px;
+        height: 20px;
+        border-radius: 12px;
+    }
+    
+    .icon-silver {
+        background: #CBCCD0;
+        width: 20px;
+        height: 20px;
+        border-radius: 12px;
+    }
+    
     .bg-white {
         color: rgba(0, 0, 0, 0.50);
     }
-
+    
     .nav-icon1 span {
         background: rgba(0, 0, 0, 0.50);
     }
-
+    
     .list-group-item {
         border: 0;
         padding: 0;
         color: rgba(0, 0, 0, 0.50);
         font-size: 12px;
     }
-
+    
     .container-fluid .row {
         margin: 0;
     }
-
+    
     .margin-bottom-0 {
         margin-bottom: 0;
     }
-
+    
     .inventory-container {
         background: rgba(0, 0, 0, 0.05);
     }
-
+    
     .btn {
         background: transparent;
         text-transform: capitalize;
@@ -85,122 +128,126 @@
         font-size: 16px;
         line-height: 24px;
     }
-
+    
     .btn.border-grey {
         border: 1px solid rgba(0, 0, 0, 0.125);
         font-family: designk-bold;
         font-size: 16px;
         line-height: 24px;
     }
-
+    
     .list-item {
         background: #fff;
         height: 280px;
     }
-
+    
     .dd-check a {
         position: relative;
         padding-left: 30px;
     }
-
+    
     i {
         font-size: 10px;
         padding: 0 5px;
     }
-
+    
     .dd-check a i {
         top: 12px;
         left: 14px;
         font-size: 10px;
         position: absolute;
     }
-
+    
     .dd-check a:hover i:before {
         content: '\e033';
         color: red;
     }
-
+    
     .form-control.radius-0 {
         border-radius: 0;
         border: 1px solid rgba(0, 0, 0, 0.125);
     }
-
+    
     .facets-container :input {
         width: 100%;
     }
-
+    
     .facets-container .dropdown button {
         text-align: left;
     }
-
+    
     .facets-container .dropdown button:after {
         right: 20px;
         position: absolute;
         TOP: 14px;
     }
-
+    
     .range-container {
         position: relative;
     }
-
+    
     .range-val {
         display: block;
     }
-
+    
     .grey-text {
         color: rgba(0, 0, 0, 0.50);
     }
-
+    
     .info-text {
         font-size: 12px;
     }
-
+    
     .expanded-list {
         height: auto;
     }
-
+    
     .card-body {
         background: #E9E9E9;
         border: 0;
     }
-
+    
     .btn[data-toggle],
     .btn[data-toggle]:focus {
         color: #000;
         box-shadow: none;
     }
-
+    
     .btn[data-toggle][aria-expanded=true] i::before {
         content: '\e037';
     }
-
+    
     .btn[data-toggle][aria-expanded=false] i::before {
         content: '\e034';
     }
-
+    
     .font-0 {
         font-size: 0;
     }
-
+    
     header {
         top: 0;
     }
-
+    
     .model-name {
         color: #000;
     }
-
+    
     .model-price {
         color: rgba(0, 0, 0, .5);
         font-size: 12px;
     }
-
+    
     .model-price strong {
         color: #000;
         font-size: 28px;
     }
-
+    
     @media only screen and (max-width: 767px) {
+        .logo {
+            left: 40%;
+            position: absolute;
+        }
         .float-xs-right {
             float: right;
         }
@@ -213,7 +260,7 @@
         }
         header a .hamburger,
         header a:hover .hamburger,
-            {
+        {
             width: 30px;
             color: #000;
             height: 30px;
@@ -233,7 +280,7 @@
             height: auto;
         }
     }
-
+    
     @media only screen and (min-width: 768px) {
         .facets-container.collapse {
             display: block;
