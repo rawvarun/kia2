@@ -9,6 +9,7 @@
         "Carpeted Floor Mats",
         "Ventilated Front Seat"
       ],
+      "color-variants": ["blue", "grey", "silver"],
       "model-info": [{
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$40,980",
@@ -25,6 +26,7 @@
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$40,980",
           "model-image": "./src/assets/images/sorento-silver.jpg",
+
           "alt-text": "sorento silver"
         }
       ],
@@ -40,20 +42,24 @@
         "Carpeted Floor Mats",
         "Ventilated Front Seat"
       ],
+      "color-variants": ["blue", "grey", "silver"],
       "model-info": [{
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$50,680",
-          "model-image": "./src/assets/images/sorento-blue.jpg"
+          "model-image": "./src/assets/images/sorento-blue.jpg",
+          "alt-text": "sorento blue"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$50,680",
-          "model-image": "./src/assets/images/sorento-grey.jpg"
+          "model-image": "./src/assets/images/sorento-grey.jpg",
+          "alt-text": "sorento grey"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$50,680",
-          "model-image": "./src/assets/images/sorento-silver.jpg"
+          "model-image": "./src/assets/images/sorento-silver.jpg",
+          "alt-text": "sorento silver"
         }
       ],
       "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
@@ -68,20 +74,24 @@
         "Carpeted Floor Mats",
         "Ventilated Front Seat"
       ],
+      "color-variants": ["blue", "grey", "silver"],
       "model-info": [{
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$60,480",
-          "model-image": "./src/assets/images/sorento-blue.jpg"
+          "model-image": "./src/assets/images/sorento-blue.jpg",
+          "alt-text": "sorento blue"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$60,480",
-          "model-image": "./src/assets/images/sorento-grey.jpg"
+          "model-image": "./src/assets/images/sorento-grey.jpg",
+          "alt-text": "sorento grey"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$60,480",
-          "model-image": "./src/assets/images/sorento-silver.jpg"
+          "model-image": "./src/assets/images/sorento-silver.jpg",
+          "alt-text": "sorento silver"
         }
       ],
       "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
@@ -96,20 +106,24 @@
         "Carpeted Floor Mats",
         "Ventilated Front Seat"
       ],
+      "color-variants": ["blue", "grey", "silver"],
       "model-info": [{
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$70,480",
-          "model-image": "./src/assets/images/sorento-blue.jpg"
+          "model-image": "./src/assets/images/sorento-blue.jpg",
+          "alt-text": "sorento blue"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$70,480",
-          "model-image": "./src/assets/images/sorento-grey.jpg"
+          "model-image": "./src/assets/images/sorento-grey.jpg",
+          "alt-text": "sorento grey"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$70,480",
-          "model-image": "./src/assets/images/sorento-silver.jpg"
+          "model-image": "./src/assets/images/sorento-silver.jpg",
+          "alt-text": "sorento silver"
         }
       ],
       "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
@@ -124,20 +138,24 @@
         "Carpeted Floor Mats",
         "Ventilated Front Seat"
       ],
+      "color-variants": ["blue", "grey", "silver"],
       "model-info": [{
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$80,480",
-          "model-image": "./src/assets/images/sorento-blue.jpg"
+          "model-image": "./src/assets/images/sorento-blue.jpg",
+          "alt-text": "sorento blue"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$80,480",
-          "model-image": "./src/assets/images/sorento-grey.jpg"
+          "model-image": "./src/assets/images/sorento-grey.jpg",
+          "alt-text": "sorento grey"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$80,480",
-          "model-image": "./src/assets/images/sorento-silver.jpg"
+          "model-image": "./src/assets/images/sorento-silver.jpg",
+          "alt-text": "sorento silver"
         }
       ],
       "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
@@ -152,20 +170,24 @@
         "Carpeted Floor Mats",
         "Ventilated Front Seat"
       ],
+      "color-variants": ["blue", "grey", "silver"],
       "model-info": [{
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$90,480",
-          "model-image": "./src/assets/images/sorento-blue.jpg"
+          "model-image": "./src/assets/images/sorento-blue.jpg",
+          "alt-text": "sorento blue"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$90,480",
-          "model-image": "./src/assets/images/sorento-grey.jpg"
+          "model-image": "./src/assets/images/sorento-grey.jpg",
+          "alt-text": "sorento grey"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$90,480",
-          "model-image": "./src/assets/images/sorento-silver.jpg"
+          "model-image": "./src/assets/images/sorento-silver.jpg",
+          "alt-text": "sorento silver"
         }
       ],
       "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
@@ -180,20 +202,24 @@
         "Carpeted Floor Mats",
         "Ventilated Front Seat"
       ],
+      "color-variants": ["blue", "grey", "silver"],
       "model-info": [{
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$92,480",
-          "model-image": "./src/assets/images/sorento-blue.jpg"
+          "model-image": "./src/assets/images/sorento-blue.jpg",
+          "alt-text": "sorento blue"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$92,480",
-          "model-image": "./src/assets/images/sorento-grey.jpg"
+          "model-image": "./src/assets/images/sorento-grey.jpg",
+          "alt-text": "sorento grey"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$92,480",
-          "model-image": "./src/assets/images/sorento-silver.jpg"
+          "model-image": "./src/assets/images/sorento-silver.jpg",
+          "alt-text": "sorento silver"
         }
       ],
       "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
@@ -208,20 +234,24 @@
         "Carpeted Floor Mats",
         "Ventilated Front Seat"
       ],
+      "color-variants": ["blue", "grey", "silver"],
       "model-info": [{
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$96,480",
-          "model-image": "./src/assets/images/sorento-blue.jpg"
+          "model-image": "./src/assets/images/sorento-blue.jpg",
+          "alt-text": "sorento blue"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$96,480",
-          "model-image": "./src/assets/images/sorento-grey.jpg"
+          "model-image": "./src/assets/images/sorento-grey.jpg",
+          "alt-text": "sorento grey"
         },
         {
           "model-name": "2018, Sorento XL",
           "model-price-formatted": "$96,480",
-          "model-image": "./src/assets/images/sorento-silver.jpg"
+          "model-image": "./src/assets/images/sorento-silver.jpg",
+          "alt-text": "sorento silver"
         }
       ],
       "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."

@@ -4,6 +4,11 @@ import '../css/import.scss';
 import './vendor/slick.min.js';
 import './vendor/multirange.js';
 import './slider.js';
+var Handlebars = require('handlebars/runtime');
+
+Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
+  return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+});
 
 var inventoryList = require('../templates/inventory-listing.hbs');
 var inventoryData = require('../data/inventory-listing.json');
@@ -12,9 +17,12 @@ $(function() {
 
   function startSlider() {
     $('.js-list-model-carousel').slick({
-      arrows: false,
-      dots: true
+      arrows: false
     });
+    $('.slick-controllers li').on('click', function() {
+      var slideno = $(this).data('slide');
+      $(this).closest('.js-list-model-carousel').slick('slickGoTo', slideno);
+    })
   }
 
   function destroySlider() {
@@ -51,28 +59,29 @@ $(function() {
   function bindSort() {
     $('.js-sort-by').siblings('.dropdown-menu').find('a').on('click', function() {
       var sortby = $(this).data('sortby');
-
-      if (sortby == 'distance') {
-        inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function(a, b) {
-          var x = +a.distance < +b.distance ? -1 : 1;
-          return x;
-        });
-      } else if (sortby == 'pricehigh') {
-        inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function(a, b) {
-          var x = a.modelprice < b.modelprice ? 1 : -1;
-          return x;
-        });
-      } else if (sortby == 'pricelow') {
-        inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function(a, b) {
-          var x = a.modelprice < b.modelprice ? -1 : 1;
-          return x;
-        });
-      } else {
-        // nothing 
+      if ($('.align-items-center').length) {
+        if (sortby == 'distance') {
+          inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function(a, b) {
+            var x = +a.distance < +b.distance ? -1 : 1;
+            return x;
+          });
+        } else if (sortby == 'pricehigh') {
+          inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function(a, b) {
+            var x = a.modelprice < b.modelprice ? 1 : -1;
+            return x;
+          });
+        } else if (sortby == 'pricelow') {
+          inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function(a, b) {
+            var x = a.modelprice < b.modelprice ? -1 : 1;
+            return x;
+          });
+        } else {
+          // nothing 
+        }
+        clearListing();
+        destroySlider();
+        loadInventoryListing(inventoryData);
       }
-      clearListing();
-      destroySlider();
-      loadInventoryListing(inventoryData);
     });
   }
 
