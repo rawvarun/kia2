@@ -11,6 +11,37 @@
         font-family: designk-regular;
     }
     
+    .loader {
+        border: 8px solid #fce4e4;
+        border-radius: 50%;
+        border-top: 8px solid #3498db;
+        width: 40px;
+        height: 40px;
+        -webkit-animation: spin 2s linear infinite;
+        /* Safari */
+        animation: spin 2s linear infinite;
+        margin: auto;
+    }
+    /* Safari */
+    
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
     .bg-white {
         color: rgba(0, 0, 0, 0.50);
     }
