@@ -1,11 +1,12 @@
+{{#if inventory-data}}
 {{#each inventory-data}}
-<div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center">
+<div class="row inventory-list list-item mt-3  mb-3 animated slideInUp align-items-center" data-distance="{{distance}}">
   <div class="col-sm-4 product-carousel">
     <div class="js-list-model-carousel">
       {{#each model-info}}
       <div>
         <p class="model-name mb-0 mt-4">{{this.model-name}}</p>
-        <p class="mb-0 model-price"><strong>{{model-price}} </strong>MSRP*</p>
+        <p class="mb-0 model-price"><strong>{{model-price-formatted}} </strong>MSRP*</p>
         <img src="{{model-image}}" width="300" alt="{{alt-text}}" />
       </div>
       {{/each}}
@@ -36,3 +37,6 @@
   </div>
 </div>
 {{/each}}
+{{else}}
+  <p class="error-msg p-5">Sorry! No matches found with selected filters. Please change your filters.</p>
+{{/if}}

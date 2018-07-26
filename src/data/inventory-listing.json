@@ -1,6 +1,8 @@
 {
   "inventory-data": [{
       "dealer-name": "Kia Downtown Los Angeles (6 mi)",
+      "distance": "1000",
+      "modelprice": "40980",
       "packages": [
         "LX Convenience Package",
         "LX Premium Package",
@@ -9,19 +11,19 @@
       ],
       "model-info": [{
           "model-name": "2018, Sorento XL",
-          "model-price": "$40,980",
+          "model-price-formatted": "$40,980",
           "model-image": "./src/assets/images/sorento-blue.jpg",
           "alt-text": "sorento blue"
         },
         {
           "model-name": "2018, Sorento XL",
-          "model-price": "$41,980",
+          "model-price-formatted": "$40,980",
           "model-image": "./src/assets/images/sorento-grey.jpg",
           "alt-text": "sorento grey"
         },
         {
           "model-name": "2018, Sorento XL",
-          "model-price": "$39,470",
+          "model-price-formatted": "$40,980",
           "model-image": "./src/assets/images/sorento-silver.jpg",
           "alt-text": "sorento silver"
         }
@@ -30,6 +32,8 @@
     },
     {
       "dealer-name": "Kia Downtown Los Angeles (6 mi)",
+      "distance": "4500",
+      "modelprice": "50680",
       "packages": [
         "LX Convenience Package",
         "LX Premium Package",
@@ -38,17 +42,185 @@
       ],
       "model-info": [{
           "model-name": "2018, Sorento XL",
-          "model-price": "$40,980",
+          "model-price-formatted": "$50,680",
           "model-image": "./src/assets/images/sorento-blue.jpg"
         },
         {
           "model-name": "2018, Sorento XL",
-          "model-price": "$41,980",
+          "model-price-formatted": "$50,680",
           "model-image": "./src/assets/images/sorento-grey.jpg"
         },
         {
           "model-name": "2018, Sorento XL",
-          "model-price": "$39,470",
+          "model-price-formatted": "$50,680",
+          "model-image": "./src/assets/images/sorento-silver.jpg"
+        }
+      ],
+      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+    },
+    {
+      "dealer-name": "Kia Downtown Los Angeles (6 mi)",
+      "distance": "2600",
+      "modelprice": "60480",
+      "packages": [
+        "LX Convenience Package",
+        "LX Premium Package",
+        "Carpeted Floor Mats",
+        "Ventilated Front Seat"
+      ],
+      "model-info": [{
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$60,480",
+          "model-image": "./src/assets/images/sorento-blue.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$60,480",
+          "model-image": "./src/assets/images/sorento-grey.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$60,480",
+          "model-image": "./src/assets/images/sorento-silver.jpg"
+        }
+      ],
+      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+    },
+    {
+      "dealer-name": "Kia Downtown Los Angeles (6 mi)",
+      "distance": "1600",
+      "modelprice": "70480",
+      "packages": [
+        "LX Convenience Package",
+        "LX Premium Package",
+        "Carpeted Floor Mats",
+        "Ventilated Front Seat"
+      ],
+      "model-info": [{
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$70,480",
+          "model-image": "./src/assets/images/sorento-blue.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$70,480",
+          "model-image": "./src/assets/images/sorento-grey.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$70,480",
+          "model-image": "./src/assets/images/sorento-silver.jpg"
+        }
+      ],
+      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+    },
+    {
+      "dealer-name": "Kia Downtown Los Angeles (6 mi)",
+      "distance": "4200",
+      "modelprice": "80480",
+      "packages": [
+        "LX Convenience Package",
+        "LX Premium Package",
+        "Carpeted Floor Mats",
+        "Ventilated Front Seat"
+      ],
+      "model-info": [{
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$80,480",
+          "model-image": "./src/assets/images/sorento-blue.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$80,480",
+          "model-image": "./src/assets/images/sorento-grey.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$80,480",
+          "model-image": "./src/assets/images/sorento-silver.jpg"
+        }
+      ],
+      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+    },
+    {
+      "dealer-name": "Kia Downtown Los Angeles (6 mi)",
+      "distance": "800",
+      "modelprice": "90480",
+      "packages": [
+        "LX Convenience Package",
+        "LX Premium Package",
+        "Carpeted Floor Mats",
+        "Ventilated Front Seat"
+      ],
+      "model-info": [{
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$90,480",
+          "model-image": "./src/assets/images/sorento-blue.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$90,480",
+          "model-image": "./src/assets/images/sorento-grey.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$90,480",
+          "model-image": "./src/assets/images/sorento-silver.jpg"
+        }
+      ],
+      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+    },
+    {
+      "dealer-name": "Kia Downtown Los Angeles (6 mi)",
+      "distance": "5200",
+      "modelprice": "92480",
+      "packages": [
+        "LX Convenience Package",
+        "LX Premium Package",
+        "Carpeted Floor Mats",
+        "Ventilated Front Seat"
+      ],
+      "model-info": [{
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$92,480",
+          "model-image": "./src/assets/images/sorento-blue.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$92,480",
+          "model-image": "./src/assets/images/sorento-grey.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$92,480",
+          "model-image": "./src/assets/images/sorento-silver.jpg"
+        }
+      ],
+      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+    },
+    {
+      "dealer-name": "Kia Downtown Los Angeles (6 mi)",
+      "distance": "2300",
+      "modelprice": "96480",
+      "packages": [
+        "LX Convenience Package",
+        "LX Premium Package",
+        "Carpeted Floor Mats",
+        "Ventilated Front Seat"
+      ],
+      "model-info": [{
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$96,480",
+          "model-image": "./src/assets/images/sorento-blue.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$96,480",
+          "model-image": "./src/assets/images/sorento-grey.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price-formatted": "$96,480",
           "model-image": "./src/assets/images/sorento-silver.jpg"
         }
       ],
