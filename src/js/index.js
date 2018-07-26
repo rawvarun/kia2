@@ -32,15 +32,17 @@ $(function() {
 
   function bindLoadMoreInventories() {
     $(window).scroll(function() {
-      if ($(document).height() <= $(window).scrollTop() + $(window).height()) {
-        if ($('.loader').length == 0) {
-          $('.inventory-container').append('<div class="loader"></div>');
-          var timeout = setTimeout(function() {
-            $('.loader').remove();
-            destroySlider();
-            loadInventoryListing(inventoryData);
-            clearTimeout(timeout);
-          }, 1000);
+      if ($('.align-items-center').length) {
+        if ($(document).height() <= $(window).scrollTop() + $(window).height()) {
+          if ($('.loader').length == 0) {
+            $('.inventory-container').append('<div class="loader"></div>');
+            var timeout = setTimeout(function() {
+              $('.loader').remove();
+              destroySlider();
+              loadInventoryListing(inventoryData);
+              clearTimeout(timeout);
+            }, 1000);
+          }
         }
       }
     });
