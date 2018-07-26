@@ -1,0 +1,49 @@
+.footer {
+    background-color: $charcoal;
+    padding: 20px;
+    color: $white;
+    text-transform: capitalize;
+    .kia-logo2 {
+        float: left;
+        height: 30px;
+    }
+    .search-div {
+        float: right;
+        border-bottom: 1px solid $med-gray;
+    }
+    &-search {
+        border: 0;
+        padding: 0 5px 2px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        &.footer-left-side,
+        &.footer-right-side {
+            padding: 20px 20px 0;
+        }
+        li {
+            padding: 5px 0;
+            list-style: none;
+        }
+    }
+    &-right-side {
+        width: 100%;
+    }
+    &-left-side {
+        font-size: 18px;
+    }
+    &-right-side-div {
+        border-top: 1px solid $med-gray;
+        &:last-child {
+            border-bottom: 1px solid $med-gray;
+        }
+        ul {
+            opacity: 0.5;
+        }
+        @media screen and (min-width: 767px) {
+            float: left;
+            border: 0;
+        }
+    }
+}
