@@ -52,7 +52,8 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)$/,
         loader: 'file-loader?name=[hash].[ext]&outputPath=../assets/images/&publicPath=assets/images/'
-      }
+      },
+      { test: /\.hbs$/, loader: 'handlebars-loader' }
     ]
   }
 };

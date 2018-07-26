@@ -5,7 +5,10 @@ import './vendor/slick.min.js';
 import './vendor/multirange.js';
 import './slider.js';
 
+var inventoryList = require('../templates/inventory-listing.hbs');
+var inventoryData = require('../data/inventory-listing.json');
 $(function() {
+  $('.inventory-container').append(inventoryList(inventoryData));
   $('[type=range]').on('change', function() {
     var input = document.querySelector('.original[type=range]'),
       selectedRange = '';
@@ -23,4 +26,5 @@ $(function() {
     arrows: false,
     dots: true
   });
+
 })

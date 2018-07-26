@@ -1,0 +1,58 @@
+{
+  "inventory-data": [{
+      "dealer-name": "Kia Downtown Los Angeles (6 mi)",
+      "packages": [
+        "LX Convenience Package",
+        "LX Premium Package",
+        "Carpeted Floor Mats",
+        "Ventilated Front Seat"
+      ],
+      "model-info": [{
+          "model-name": "2018, Sorento XL",
+          "model-price": "$40,980",
+          "model-image": "./src/assets/images/sorento-blue.jpg",
+          "alt-text": "sorento blue"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price": "$41,980",
+          "model-image": "./src/assets/images/sorento-grey.jpg",
+          "alt-text": "sorento grey"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price": "$39,470",
+          "model-image": "./src/assets/images/sorento-silver.jpg",
+          "alt-text": "sorento silver"
+        }
+      ],
+      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+    },
+    {
+      "dealer-name": "Kia Downtown Los Angeles (6 mi)",
+      "packages": [
+        "LX Convenience Package",
+        "LX Premium Package",
+        "Carpeted Floor Mats",
+        "Ventilated Front Seat"
+      ],
+      "model-info": [{
+          "model-name": "2018, Sorento XL",
+          "model-price": "$40,980",
+          "model-image": "./src/assets/images/sorento-blue.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price": "$41,980",
+          "model-image": "./src/assets/images/sorento-grey.jpg"
+        },
+        {
+          "model-name": "2018, Sorento XL",
+          "model-price": "$39,470",
+          "model-image": "./src/assets/images/sorento-silver.jpg"
+        }
+      ],
+      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+    }
+  ]
+}
