@@ -10,26 +10,65 @@
     body {
         font-family: designk-regular;
     }
-
+    
+    .loader {
+        border: 8px solid #fce4e4;
+        border-radius: 50%;
+        border-top: 8px solid #3498db;
+        width: 40px;
+        height: 40px;
+        -webkit-animation: spin 2s linear infinite;
+        /* Safari */
+        animation: spin 2s linear infinite;
+        margin: auto;
+    }
+    /* Safari */
+    
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .bg-white {
+        color: rgba(0, 0, 0, 0.50);
+    }
+    
+    .nav-icon1 span {
+        background: rgba(0, 0, 0, 0.50);
+    }
+    
     .list-group-item {
         border: 0;
         padding: 0;
         color: rgba(0, 0, 0, 0.50);
         font-size: 12px;
     }
-
+    
     .container-fluid .row {
         margin: 0;
     }
-
+    
     .margin-bottom-0 {
         margin-bottom: 0;
     }
-
+    
     .inventory-container {
         background: rgba(0, 0, 0, 0.05);
     }
-
+    
     .btn {
         background: transparent;
         text-transform: capitalize;
@@ -37,107 +76,121 @@
         font-size: 16px;
         line-height: 24px;
     }
-
+    
     .btn.border-grey {
         border: 1px solid rgba(0, 0, 0, 0.125);
         font-family: designk-bold;
         font-size: 16px;
         line-height: 24px;
     }
-
+    
     .list-item {
         background: #fff;
-        height: 200px;
+        height: 280px;
     }
-
+    
     .dd-check a {
         position: relative;
         padding-left: 30px;
     }
-
+    
     i {
         font-size: 10px;
         padding: 0 5px;
     }
-
+    
     .dd-check a i {
         top: 12px;
         left: 14px;
         font-size: 10px;
         position: absolute;
     }
-
+    
     .dd-check a:hover i:before {
         content: '\e033';
         color: red;
     }
-
+    
     .form-control.radius-0 {
         border-radius: 0;
         border: 1px solid rgba(0, 0, 0, 0.125);
     }
-
+    
     .facets-container :input {
         width: 100%;
     }
-
+    
     .facets-container .dropdown button {
         text-align: left;
     }
-
+    
     .facets-container .dropdown button:after {
         right: 20px;
         position: absolute;
         TOP: 14px;
     }
-
+    
     .range-container {
         position: relative;
     }
-
+    
     .range-val {
         display: block;
     }
-
+    
     .grey-text {
         color: rgba(0, 0, 0, 0.50);
     }
-
+    
     .info-text {
         font-size: 12px;
     }
-
+    
     .expanded-list {
         height: auto;
     }
-
+    
     .card-body {
         background: #E9E9E9;
         border: 0;
     }
-
+    
     .btn[data-toggle],
     .btn[data-toggle]:focus {
         color: #000;
         box-shadow: none;
     }
-
-    .btn[data-toggle][aria-expanded=true] i {
+    
+    .btn[data-toggle][aria-expanded=true] i::before {
         content: '\e037';
     }
-
-    .btn[data-toggle][aria-expanded=false] i {
+    
+    .btn[data-toggle][aria-expanded=false] i::before {
         content: '\e034';
     }
-
+    
     .font-0 {
         font-size: 0;
     }
-
+    
     header {
         top: 0;
     }
-
+    
+    .model-name {
+        color: #000;
+    }
+    
+    .model-price {
+        color: rgba(0, 0, 0, .5);
+        font-size: 12px;
+    }
+    
+    .model-price strong {
+        color: #000;
+        font-size: 28px;
+    }
+    
     @media only screen and (max-width: 767px) {
         .float-xs-right {
             float: right;
@@ -151,7 +204,7 @@
         }
         header a .hamburger,
         header a:hover .hamburger,
-            {
+        {
             width: 30px;
             color: #000;
             height: 30px;
@@ -164,13 +217,22 @@
         .inventory-container {
             margin-top: 50px;
         }
+        .list-item {
+            height: 480px;
+        }
+        .expanded-list {
+            height: auto;
+        }
     }
-
+    
     @media only screen and (min-width: 768px) {
         .facets-container.collapse {
             display: block;
         }
         .container-fluid>div.row {
             margin-top: 50px;
+        }
+        .align-items-center .product-carousel {
+            padding-left: 40px;
         }
     }
