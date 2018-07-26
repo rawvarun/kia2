@@ -7,12 +7,27 @@ header {
     z-index: 1;
     color: $light-background;
     border-bottom: 1px solid $gray-UI;
-    .kia-logo {
+    transition: background-color 0.5s linear;
+    .kia-logo2 {
+        display: none;
+    }
+    .kia-logo,
+    .kia-logo2 {
         height: 30px;
     }
     &.theme {
+        transition: background-color 0.8s linear;
+    }
+    &.theme,
+    &.expanded {
         background-color: $light-background;
         color: $black;
+        .kia-logo {
+            display: none;
+        }
+        .kia-logo2 {
+            display: initial;
+        }
     }
     a {
         color: inherit;
@@ -23,6 +38,9 @@ header {
     }
     @media screen and (max-width:767px) {
         padding: 10px 0;
+    }
+    &.expanded {
+        border-bottom: 0;
     }
 }
 
