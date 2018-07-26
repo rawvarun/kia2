@@ -1,12 +1,14 @@
 .carousel1 {
-    max-width: 1440px;
-    margin: 0 auto;
+    margin-bottom: 50px;
     .carousel {
         padding-bottom: 75px;
     }
     .carousel-indicators {
         justify-content: left;
-        margin-left: 100px;
+        margin-left: 40px;
+        @media screen and (min-width: 767px) {
+            margin-left: 100px;
+        }
         li {
             background-color: $gray-UI;
             width: 40px;
@@ -47,21 +49,41 @@
         width: 100%;
         text-align: center;
     }
+    &-btns {
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
     &-disclaimer {
+        margin: 20px auto;
         position: absolute;
         bottom: 0;
-        text-align: center;
+        right: 30px;
+        text-decoration: underline;
+        @media screen and (min-width: 767px) {
+            right: 200px;
+        }
     }
     &-btn {
         background-color: $black;
-        position: absolute;
-        bottom: 0;
-        right: 0;
         color: $white;
         font-size: 14px;
         padding: 20px 30px;
+        border: 0;
+        margin-top: 20px;
         &:hover {
             background-color: $kia-red;
         }
+        @media screen and (min-width:767px) {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
     }
+}
+
+.carousel1,
+.carousel2 {
+    max-width: 1440px;
+    margin: 0 auto;
 }
