@@ -67,4 +67,20 @@
             border: 0;
         }
     }
+    &-bottom {
+        opacity: 0.5;
+        .col-sm-4 {
+            float: left;
+            padding: 20px 20px 0;
+        }
+        li {
+            padding-right: 20px;
+            display: inline;
+        }
+        .text-centre {
+            @media screen and (min-width: 767px) {
+                text-align: center;
+            }
+        }
+    }
 }

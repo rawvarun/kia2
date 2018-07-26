@@ -1,0 +1,67 @@
+.carousel1 {
+    max-width: 1440px;
+    margin: 0 auto;
+    .carousel {
+        padding-bottom: 75px;
+    }
+    .carousel-indicators {
+        justify-content: left;
+        margin-left: 100px;
+        li {
+            background-color: $gray-UI;
+            width: 40px;
+            height: 2px;
+            &.active {
+                background-color: $charcoal;
+            }
+        }
+    }
+    p {
+        line-height: 1;
+    }
+    &-year {
+        position: absolute;
+        top: 120px;
+        color: $white;
+        width: 100%;
+        text-align: center;
+    }
+    &-head {
+        position: absolute;
+        top: 160px;
+        color: $white;
+        width: 100%;
+        font-size: 38px;
+        font-weight: bold;
+        text-align: center;
+    }
+    &-desc {
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    &-price {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    &-disclaimer {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+    }
+    &-btn {
+        background-color: $black;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: $white;
+        font-size: 14px;
+        padding: 20px 30px;
+        &:hover {
+            background-color: $kia-red;
+        }
+    }
+}
