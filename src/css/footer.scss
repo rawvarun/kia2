@@ -16,9 +16,13 @@
         &::after {
             content: '';
             background-image: url('search.svg');
-            background-size: 10px;
-            height: 10px;
-            width: 10px;
+            background-size: 18px;
+            background-repeat: no-repeat;
+            height: 18px;
+            width: 18px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
         }
     }
     &-search {
@@ -41,8 +45,10 @@
         li {
             padding: 5px 0;
             list-style: none;
-            width: fit-content;
             cursor: pointer;
+            @media screen and (min-width: 767px) {
+                width: fit-content;
+            }
         }
     }
     &-right-side {
@@ -66,6 +72,11 @@
             float: left;
             border: 0;
         }
+        li {
+            @media screen and (max-width: 767px) {
+                padding: 7px 0;
+            }
+        }
     }
     &-bottom {
         opacity: 0.5;
@@ -81,6 +92,21 @@
             @media screen and (min-width: 767px) {
                 text-align: center;
             }
+        }
+    }
+    li[aria-expanded="true"] {
+        .oi {
+            &::before {
+                content: '\E037';
+            }
+        }
+    }
+    .oi {
+        color: $white;
+        float: right;
+        top: 6px;
+        &::before {
+            content: '\E034';
         }
     }
 }
