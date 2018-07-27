@@ -40,6 +40,7 @@ $(function() {
   }
 
   function loadInventoryListing(listingObj) {
+    $('.error-msg').remove();
     $('.inventory-container').append(inventoryList(listingObj));
     startSlider();
   }
