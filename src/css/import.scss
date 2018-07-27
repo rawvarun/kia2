@@ -250,6 +250,16 @@
         font-size: 28px;
     }
     
+    .facets-head,
+    .facets-subhead {
+        font-family: designk-bold;
+        clear: both;
+    }
+    
+    .facets-subhead {
+        font-size: 14px;
+    }
+    
     @media only screen and (max-width: 767px) {
         .logo {
             left: 40%;
