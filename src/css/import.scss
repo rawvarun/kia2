@@ -52,6 +52,10 @@
         }
     }
     
+    .font-bold {
+        font-family: designk-bold;
+    }
+    
     .selected-filters i {
         color: rgba(0, 0, 0, 0.25);
         line-height: 16px;
@@ -125,14 +129,14 @@
     .btn {
         background: transparent;
         text-transform: capitalize;
-        font-family: designk-bold;
+        font-family: designk-medium;
         font-size: 16px;
         line-height: 24px;
     }
     
     .btn.border-grey {
         border: 1px solid rgba(0, 0, 0, 0.125);
-        font-family: designk-bold;
+        font-family: designk-medium;
         font-size: 16px;
         line-height: 24px;
     }

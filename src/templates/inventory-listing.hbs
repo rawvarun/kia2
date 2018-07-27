@@ -5,7 +5,7 @@
     <div class="js-list-model-carousel">
       {{#each model-info}}
       <div>
-        <p class="model-name mb-0 mt-4">{{@index}} {{this.model-name}}</p>
+        <p class="model-name mb-0 mt-4 font-bold">{{this.model-name}}</p>
         <p class="mb-0 model-price"><strong>{{model-price-formatted}} </strong>MSRP*</p>
         <img src="{{model-image}}" width="300" alt="{{alt-text}}" />
           <ul class="slick-controllers">
@@ -24,13 +24,13 @@
   </div>
   <div class="col-sm-4">
     <b>{{dealer-name}}</b>
-    <span>Packages & Otions</span>
+    <span class="font-bold mt-2 d-block">Packages & Otions</span>
     <ul class="list-group">
       {{#each packages as |item index|}}
       <li class="list-group-item">{{item}}<i class="oi oi-info" aria-hidden="true"></i></li>
       {{/each}}
     </ul>
-    <a class="btn" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">More details <i class="oi "></i></a>
+    <a class="btn pl-0" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">More details <i class="oi "></i></a>
   </div>
   <div class="col-sm-4">
     <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white hidden-xs">Get a Quote</button>
