@@ -30,7 +30,7 @@
       <li class="list-group-item">{{item}}<i class="oi oi-info" aria-hidden="true"></i></li>
       {{/each}}
     </ul>
-    <a class="btn pl-0" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">More details <i class="oi "></i></a>
+    <a class="btn pl-0" data-toggle="collapse" href="#collapseExample{{@index}}" role="button" aria-expanded="false" aria-controls="collapseExample1">More details <i class="oi "></i></a>
   </div>
   <div class="col-sm-4">
     <button type="button" class="btn border-grey rounded-0 btn-block bg-dark text-white hidden-xs">Get a Quote</button>
@@ -38,11 +38,48 @@
     <button type="button" class="btn border-grey rounded-0 btn-block hidden-xs">Chat with Dealer</button>
   </div>
   <div class="col-sm-12 pl-0 pr-0 ">
-    <div class="collapse mb-3" id="collapseExample1">
+    <div class="collapse mb-3" id="collapseExample{{@index}}">
       <div class="card card-body">
-        {{detail-info}}
+	    <div class="card-body-close"></div>
+		<div class="card-body-left">
+		  <p class="card-body-title text-underline">{{detail-info.address-title}}</p>
+		  <span class="address">{{{detail-info.address}}}</span>
+		  <p class="vin">{{detail-info.vin}}</p>
+		  <p class="card-body-title text-underline">{{detail-info.sticker-title}}</p>
+		</div>
+		<div class="card-body-right">
+          <div class="color-section">
+		    <div class="color-section-left">
+		      <span class="card-body-title">Color</span>
+			</div>
+			<div class="color-section-right">
+			  {{#each detail-info.color-variants as |item index|}}
+		      <div><p class="{{item.color}}"></p><p>{{item.title}}</p></div>
+			  {{/each}}
+			</div>
+		  </div>
+		  <div class="powertrain-section">
+		    <div class="powertrain-section-left">
+		      <span class="card-body-title">Powertrain</span>
+			</div>
+			<div class="powertrain-section-right">
+		      <span>{{detail-info.powertrain}}</span>
+			</div>
+		  </div>
+		  <div class="packages-options-section">
+		    <div class="packages-options-section-left">
+		      <span class="card-body-title">Packages & Options</span>
+			</div>
+			<div class="packages-options-section-right">
+		      {{#each detail-info.packages-options as |item index|}}
+		      <p class="">{{item.package-name}}</p>
+			  {{/each}}
+			  <a href="{{detail-info.full-specs-url}}" class="full-specs-text text-underline">Full specs <span>></span></a>
+			</div>
+		  </div>
+		</div>
       </div>
-    </div>
+	</div>
     <button type="button" class="btn border-grey rounded-0 mb-3 ml-3 w-85 bg-dark text-white visible-xs">Get a Quote</button>
   </div>
 </div>

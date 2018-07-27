@@ -137,6 +137,11 @@ $(function() {
   $('[data-toggle]').on('click', function() {
     $(this).closest('.list-item').toggleClass('expanded-list')
   });
+  
+  $('.card-body-close').on('click', function() {
+	  $('.collapse').removeClass('show');
+	  $('.collapse').closest('slideInUp').removeClass('expanded-list');
+  });
 
   $('#toggle-nav').on('click', function() {
     if (this.checked == true) {
