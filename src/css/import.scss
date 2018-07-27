@@ -93,7 +93,7 @@
     }
     
     .icon-blue {
-        background: #495672;
+        background: #1c48ad;
         width: 20px;
         height: 20px;
         border-radius: 12px;
@@ -275,6 +275,14 @@
     
     .w-85 {
         width: 85%;
+    }
+    
+     :focus {
+        outline: none;
+    }
+    
+    .active-controller {
+        border: 3px solid #6f6f6f;
     }
     
     @media only screen and (max-width: 767px) {

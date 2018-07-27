@@ -4,6 +4,7 @@ import '../css/import.scss';
 import './vendor/slick.min.js';
 import './vendor/multirange.js';
 import './slider.js';
+import { debug } from 'util';
 var Handlebars = require('handlebars/runtime');
 
 Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
@@ -19,10 +20,19 @@ $(function() {
     $('.js-list-model-carousel').slick({
       arrows: false
     });
+    $('.js-list-model-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+      console.log(currentSlide);
+      $(".slick-controllers").find('div').removeClass('active-controller');
+      $(this).find('[data-slide="' + currentSlide + '"]').find('div').addClass('active-controller');
+    });
     $('.slick-controllers li').on('click', function() {
       var slideno = $(this).data('slide');
       $(this).closest('.js-list-model-carousel').slick('slickGoTo', slideno);
-    })
+    });
+    // $(".slick-controllers").find('div').on('click', function() {
+    //   $(".slick-controllers").find('div').removeClass('active-controller');
+    //   $(this).addClass('active-controller');
+    // })
   }
 
   function destroySlider() {
@@ -144,4 +154,14 @@ $(function() {
       $("header").removeClass("theme");
     }
   });
+
+  // $('.hamburger-container').on('click', function(e) {
+  //   e.preventDefault();
+  //   //debugger;
+  //   if ($(this).attr('aria-expanded') === 'true') {
+  //     $('#filterpanel').removeClass('slideInLeft').addClass('slideOutRight');
+  //   } else {
+  //     $('#filterpanel').removeClass('slideOutLeft').addClass('slideInLeft');
+  //   }
+  // })
 })
