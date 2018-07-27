@@ -8,7 +8,7 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist/')
   },
   module: {
     rules: [{
@@ -47,7 +47,7 @@ module.exports = {
       },
       {
         test: /\.(eot|otf|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=fonts/[name].[ext]'
+        loader: 'file-loader?name=assets/fonts/[name].[ext]'
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
