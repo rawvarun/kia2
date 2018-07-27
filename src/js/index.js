@@ -86,29 +86,35 @@ $(function() {
   }
 
 
+  function getPriceRange() {
+    var input = document.querySelector('.original[type=range]'),
+      selectedRange = '';
+    if (input.valueLow == 0) {
+      input.valueLow = 1;
+    }
+    return {
+      "lowerVal": input.valueLow * 1000,
+      "higherVal": input.valueHigh * 1000
+    }
+  }
 
   loadInventoryListing(inventoryData);
   bindLoadMoreInventories();
   bindSort();
 
   $('[type=range]').on('change', function() {
-    var input = document.querySelector('.original[type=range]'),
-      selectedRange = '';
-    if (input.valueLow == 0) {
-      input.valueLow = 1;
-    }
-    if (input.valueLow && input.valueHigh) {
-      selectedRange = '$' + (input.valueLow * 1000) + '-' + '$' + (input.valueHigh * 1000);
+    var selectedRange,
+      obj = getPriceRange();
+    if (obj.lowerVal && obj.higherVal) {
+      selectedRange = '$' + obj.lowerVal + '-' + '$' + obj.higherVal;
       $('.js-range-val').text(selectedRange);
       var filteredData = inventoryData["inventory-data"].filter(
-        data => data.modelprice >= input.valueLow * 1000 && data.modelprice <= input.valueHigh * 1000
+        data => data.modelprice >= obj.lowerVal && data.modelprice <= obj.higherVal
       );
       filteredData["inventory-data"] = filteredData;
       clearListing();
       destroySlider();
       loadInventoryListing(filteredData);
-
-
     }
   });
 
