@@ -70,13 +70,26 @@
     
     .slick-controllers {
         list-style-type: none;
-        text-align: left;
+        text-align: center;
+    }
+    
+    .slick-slide img {
+        max-width: 100%;
     }
     
     .slick-controllers li {
         display: inline-block;
         margin: 0 10px;
         cursor: pointer;
+    }
+    
+    .slick-controllers li div {
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    .dealername {
+        margin-top: 0;
     }
     
     .icon-blue {
@@ -250,6 +263,20 @@
         font-size: 28px;
     }
     
+    .facets-head,
+    .facets-subhead {
+        font-family: designk-bold;
+        clear: both;
+    }
+    
+    .facets-subhead {
+        font-size: 14px;
+    }
+    
+    .w-85 {
+        width: 85%;
+    }
+    
     @media only screen and (max-width: 767px) {
         .logo {
             left: 40%;
@@ -281,7 +308,7 @@
             margin-top: 50px;
         }
         .list-item {
-            height: 480px;
+            height: 525px;
         }
         .expanded-list {
             height: auto;
@@ -297,5 +324,11 @@
         }
         .align-items-center .product-carousel {
             padding-left: 40px;
+        }
+        .slick-controllers {
+            text-align: left;
+        }
+        .dealername {
+            margin-top: 1.5rem;
         }
     }
