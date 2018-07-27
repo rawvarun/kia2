@@ -5,10 +5,10 @@
     <div class="js-list-model-carousel">
       {{#each model-info}}
       <div>
-        <p class="model-name mb-0 mt-4 font-bold">{{this.model-name}}</p>
-        <p class="mb-0 model-price"><strong>{{model-price-formatted}} </strong>MSRP*</p>
-        <img src="{{model-image}}" width="300" alt="{{alt-text}}" />
-          <ul class="slick-controllers">
+        <p class="model-name pl-2 mb-0 mt-4 font-bold">{{this.model-name}}</p>
+        <p class="model-price mb-0 pl-2"><strong>{{model-price-formatted}} </strong>MSRP*</p>
+        <img src="{{model-image}}" width="250" alt="{{alt-text}}" />
+          <ul class="slick-controllers p-0">
         {{!-- {{#each ../color-variants as |item indexes|}}
           {{#ifEquals @../index '0' }} --}}
           <li data-slide="0" ><div class="icon-blue"></div></li>
@@ -23,8 +23,8 @@
     </div>
   </div>
   <div class="col-sm-4">
-    <b>{{dealer-name}}</b>
-    <span class="font-bold mt-2 d-block">Packages & Otions</span>
+    <b class="d-block mt-4">{{dealer-name}}</b>
+    <span class="font-bold mt-3 d-block">Packages & Otions</span>
     <ul class="list-group">
       {{#each packages as |item index|}}
       <li class="list-group-item">{{item}}<i class="oi oi-info" aria-hidden="true"></i></li>

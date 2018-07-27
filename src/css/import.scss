@@ -70,6 +70,7 @@
     
     .slick-controllers {
         list-style-type: none;
+        text-align: left;
     }
     
     .slick-controllers li {
@@ -111,11 +112,12 @@
         border: 0;
         padding: 0;
         color: rgba(0, 0, 0, 0.50);
-        font-size: 12px;
+        font-size: 16px;
     }
     
     .container-fluid .row {
-        margin: 0;
+        margin: auto;
+        max-width: 1680px;
     }
     
     .margin-bottom-0 {
