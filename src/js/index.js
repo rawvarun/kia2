@@ -42,14 +42,19 @@ $(function() {
     $(window).scroll(function() {
       if ($('.align-items-center').length) {
         if ($(document).height() <= $(window).scrollTop() + $(window).height() + ($('footer').height() / 2)) {
-          if ($('.loader').length == 0) {
-            $('.inventory-container').append('<div class="loader"></div>');
-            var timeout = setTimeout(function() {
-              $('.loader').remove();
-              destroySlider();
-              loadInventoryListing(inventoryData);
-              clearTimeout(timeout);
-            }, 1000);
+          var objPriceRange = getPriceRange();
+          if (objPriceRange.lowerVal > 1000 || objPriceRange.higherVal < 100000) {
+            return;
+          } else {
+            if ($('.loader').length == 0) {
+              $('.inventory-container').append('<div class="loader"></div>');
+              var timeout = setTimeout(function() {
+                $('.loader').remove();
+                destroySlider();
+                loadInventoryListing(inventoryData);
+                clearTimeout(timeout);
+              }, 1000);
+            }
           }
         }
       }
