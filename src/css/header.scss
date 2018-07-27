@@ -19,7 +19,8 @@ header {
         transition: background-color 0.8s linear;
     }
     &.theme,
-    &.expanded {
+    &.expanded,
+    &.theme-fixed {
         background-color: $light-background;
         color: $black;
         .kia-logo {
