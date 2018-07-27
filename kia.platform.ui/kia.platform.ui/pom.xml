@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>kia-platform-ui</artifactId>
+        <groupId>kia.platform.ui</groupId>
+        <version>1.6.5</version>
+    </parent>
+    <artifactId>kia-platform-ui-package</artifactId>
+
+    <packaging>war</packaging>
+    <name>KIA Platform AEM :: Package</name>
+	
+    <build>
+        <!-- Only needed for Sonar-JS-Plugin until http://jira.codehaus.org/browse/SONARPLUGINS-1802 is solved -->
+        <sourceDirectory>src/main/jcr_root</sourceDirectory>
+
+        <plugins>
+            <!-- creates and deploys packages -->
+            <plugin>
+                <groupId>com.day.jcr.vault</groupId>
+                <artifactId>content-package-maven-plugin</artifactId>
+                <configuration>
+				    <builtContentDirectory>target/package/jcr_root</builtContentDirectory>
+                    <embeddedTarget>/etc/packages/kia</embeddedTarget> 
+                    <filters>
+                        <!-- rewriter configuration for PDF generation -->
+						<filter>
+							<root>/apps/kia/platform</root>
+							<excludes>
+								<exclude>/apps/kia/platform/install</exclude>
+								<exclude>/apps/kia/platform/i18n</exclude>
+								<exclude>/apps/kia/platform/configuration</exclude>
+							</excludes>
+						</filter>
+                        <!-- etc/tags needs to be extended for the artificial language boost-->
+
+                        <!-- the artificial language must have a reasonable label-->
+                    </filters>
+                    <subPackages>
+                        <subPackage>
+                            <!-- include every package in dependencies -->
+                            <type>content-package</type>
+                            <filter>true</filter>
+                        </subPackage>
+                    </subPackages>
+                </configuration>
+            </plugin> 
+
+            <!-- checks all xml files (within view projects) for well-formedness -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>xml-maven-plugin</artifactId>
+            </plugin>
+			<plugin>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>htl-maven-plugin</artifactId>
+                <configuration>
+                    <sourceDirectory>src/main/jcr_root/apps/kia</sourceDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>validate-scripts</id>
+                        <goals>
+                            <goal>validate</goal>
+                        </goals>
+                        <phase>compile</phase>
+                    </execution>
+                </executions>
+            </plugin>			
+        </plugins>
+    </build>
+  <dependencies>
+  		<dependency>
+            <artifactId>kia-platform-ui-clickdummy</artifactId>
+            <groupId>kia.platform.ui</groupId>
+            <version>${project.version}</version>
+            <type>content-package</type>
+        </dependency>
+  </dependencies>
+</project>
