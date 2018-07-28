@@ -79,10 +79,10 @@
         }
     }
     &-bottom {
-        opacity: 0.5;
         .col-sm-4 {
             float: left;
             padding: 20px 20px 0;
+            opacity: 0.5;
             @media screen and (min-width: 767px) {
                 padding-top: 40px;
             }
@@ -90,6 +90,9 @@
                 @media screen and (max-width: 767px) {
                     padding-top: 0px;
                 }
+            }
+            &:first-child {
+                opacity: 1;
             }
         }
         li {

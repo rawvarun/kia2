@@ -4,25 +4,49 @@ import '../css/import.scss';
 import './vendor/slick.min.js';
 import './vendor/multirange.js';
 import './slider.js';
+import { debug } from 'util';
 var Handlebars = require('handlebars/runtime');
+var inventoryList = require('../templates/inventory-listing.hbs');
+var inventoryData = require('../data/inventory-listing.json');
 
 Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
   return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
 
-var inventoryList = require('../templates/inventory-listing.hbs');
-var inventoryData = require('../data/inventory-listing.json');
 
 $(function() {
+
+  function isElementInViewport(el) {
+    //special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+      el = el[0];
+    }
+    try {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+      );
+    } catch (e) {
+      console.log('element reference is not correct');
+      return false;
+    }
+  }
 
   function startSlider() {
     $('.js-list-model-carousel').slick({
       arrows: false
     });
+    $('.js-list-model-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+      $(".slick-controllers").find('div').removeClass('active-controller');
+      $(this).find('[data-slide="' + currentSlide + '"]').find('div').addClass('active-controller');
+    });
     $('.slick-controllers li').on('click', function() {
       var slideno = $(this).data('slide');
       $(this).closest('.js-list-model-carousel').slick('slickGoTo', slideno);
-    })
+    });
   }
 
   function destroySlider() {
@@ -30,6 +54,7 @@ $(function() {
   }
 
   function loadInventoryListing(listingObj) {
+    $('.error-msg').remove();
     $('.inventory-container').append(inventoryList(listingObj));
     startSlider();
   }
@@ -103,28 +128,47 @@ $(function() {
     }
   }
 
-  loadInventoryListing(inventoryData);
-  bindLoadMoreInventories();
-  bindSort();
 
-  $('[type=range]').on('change', function() {
-    var selectedRange,
-      obj = getPriceRange();
-    if (obj.lowerVal && obj.higherVal) {
-      selectedRange = '$' + obj.lowerVal + '-' + '$' + obj.higherVal;
-      $('.js-range-val').text(selectedRange);
-      var filteredData = inventoryData["inventory-data"].filter(
-        data => data.modelprice >= obj.lowerVal && data.modelprice <= obj.higherVal
-      );
-      filteredData["inventory-data"] = filteredData;
-      clearListing();
-      destroySlider();
-      loadInventoryListing(filteredData);
+  function bindRangeSliderEvents() {
+    $('[type=range]').on('change', function() {
+      var selectedRange,
+        obj = getPriceRange();
+      if (obj.lowerVal && obj.higherVal) {
+        selectedRange = '$' + obj.lowerVal + '-' + '$' + obj.higherVal;
+        $('.js-range-val').text(selectedRange);
+        var filteredData = inventoryData["inventory-data"].filter(
+          data => data.modelprice >= obj.lowerVal && data.modelprice <= obj.higherVal
+        );
+        filteredData["inventory-data"] = filteredData;
+        clearListing();
+        destroySlider();
+        loadInventoryListing(filteredData);
+      }
+    });
+  }
+
+  function animateFeatureDrawer() {
+    if (isElementInViewport($('.feature-drawer')[0])) {
+      $('.feature-drawer').find('.bounceInRightAnim').each(function(i) {
+        $(this).addClass('animated bounceInRight delay-' + i);
+      });
     }
-  });
+  }
+
+  function animateFamilyLineup() {
+    if (isElementInViewport($('#carouselExampleIndicators1')[0])) {
+      $('#carouselExampleIndicators1').find('.carousel-item:first').addClass('animated bounceInRight delay-0');
+    }
+  }
+
 
   $('[data-toggle]').on('click', function() {
     $(this).closest('.list-item').toggleClass('expanded-list')
+  });
+
+  $('.card-body-close').on('click', function() {
+    $('.collapse').removeClass('show');
+    $('.collapse').closest('slideInUp').removeClass('expanded-list');
   });
 
   $('#toggle-nav').on('click', function() {
@@ -143,5 +187,14 @@ $(function() {
     } else {
       $("header").removeClass("theme");
     }
+    animateFeatureDrawer();
+    animateFamilyLineup();
   });
-})
+
+  loadInventoryListing(inventoryData);
+  bindLoadMoreInventories();
+  bindSort();
+  bindRangeSliderEvents();
+  animateFeatureDrawer();
+  animateFamilyLineup();
+});

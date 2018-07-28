@@ -124,6 +124,9 @@ ul.navigation {
     .theme & {
         background-color: $black;
     }
+    .theme-fixed & {
+        background-color: $black;
+    }
 }
 
 .nav-icon1 span:nth-child(1) {
