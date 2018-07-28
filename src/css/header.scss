@@ -30,6 +30,9 @@ header {
             display: initial;
         }
     }
+    &.theme-fixed {
+        margin: 0 -15px;
+    }
     a {
         color: inherit;
         &:hover {
