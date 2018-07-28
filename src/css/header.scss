@@ -5,7 +5,7 @@ header {
     max-height: 100%;
     width: 100%;
     z-index: 20;
-    color: $light-background;
+    color: $header-background;
     border-bottom: 1px solid $gray-UI;
     transition: background-color 0.5s linear;
     .kia-logo2 {
@@ -21,7 +21,7 @@ header {
     &.theme,
     &.expanded,
     &.theme-fixed {
-        background-color: $light-background;
+        background-color: $header-background;
         color: $black;
         .kia-logo {
             display: none;
@@ -45,6 +45,9 @@ header {
     }
     &.expanded {
         border-bottom: 0;
+    }
+    .change-theme {
+        color: inherit;
     }
 }
 
@@ -163,12 +166,14 @@ ul.navigation {
 .menu-container {
     display: block;
     height: 0;
-    transition: height ease-in-out 0.5s;
+    transition: opacity ease-in-out 0.5s;
+    background-color: $header-background;
     position: relative;
     overflow: auto;
-    top: 10px;
+    top: 18px;
     width: 100%;
     clear: both;
+    opacity: 0;
     ul {
         padding: 25px 20px 0;
         margin: 0;
@@ -189,8 +194,8 @@ ul.navigation {
 
 .toggle-nav:checked~.menu-container {
     height: 100%;
-    background-color: $light-background;
     color: $black;
+    opacity: 1;
     ul {
         height: 100%;
     }

@@ -113,10 +113,10 @@
         -ms-animation: myMove 8s 1 ease-in-out;
         animation: myMove 8s 1 ease-in-out;
         margin-bottom: 100px;
-        @media screen and (min-width: 1400px) {
+        @media screen and (min-width: 500px) {
             width: 100%;
         }
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 500px) {
             width: 456px;
             height: 413px;
             margin: 0 -37px;
