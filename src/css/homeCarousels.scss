@@ -121,35 +121,13 @@
             height: 413px;
             margin: 0 -37px;
         }
-    } // .carousel-control-next-icon {
-    //     background-image: url('arrowCircle.svg');
-    //     background-size: 80px;
-    //     background-repeat: no-repeat;
-    //     height: 80px;
-    //     width: 80px;
-    //     display: inline-block;
-    //     vertical-align: middle; // margin-right: 5px;
-    //     // position: relative;
-    //     // transform: rotate(180deg);
-    //     &::before {
-    //         content: '';
-    //         display: block;
-    //         position: absolute;
-    //         height: 80px;
-    //         width: 80px;
-    //         background-color: $kia-red;
-    //         border-radius: 50%;
-    //         top: -30px;
-    //         left: -30px;
-    //         z-index: -1;
-    //     }
-    // }
+    }
 }
 
 .carousel3 {
     a {
         text-decoration: none;
-        color: #FFF;
+        color: $white;
     }
     .slick-container {
         margin: 0 auto;
