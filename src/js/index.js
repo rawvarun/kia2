@@ -4,14 +4,24 @@ import '../css/import.scss';
 import './vendor/slick.min.js';
 import './vendor/multirange.js';
 import './slider.js';
+
 var Handlebars = require('handlebars/runtime');
 
 Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
   return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
 
+Handlebars.registerHelper('length', function(keyName) {
+  return keyName + '('+ carsData[keyName].length + ')';
+});
+
+
 var inventoryList = require('../templates/inventory-listing.hbs');
 var inventoryData = require('../data/inventory-listing.json');
+
+var carsHtml = require('../templates/inventory-search.hbs')
+var carsData = require('../data/inventory-search.json');
+
 
 $(function() {
 
@@ -144,4 +154,44 @@ $(function() {
       $("header").removeClass("theme");
     }
   });
+
+
+  function createCarListLayer(carDataObj, keyName){
+      if(!keyName) return;
+       $('#cars-data-layer').html(carsHtml({data: carDataObj,carsListData: carDataObj[keyName]}));
+       console.log($('[data-cartype="'+ keyName +'"]'))
+       $('[data-cartype="'+ keyName +'"]').closest('.li-cars-category').addClass('active')
+  }
+
+
+
+  $('#cars-data-layer').on('click', '.li-cars-category', function(){
+    $('.li-cars-category').removeClass('active');
+     createCarListLayer(carsData, $(this).data('cartype'));
+  })
+
+
+  $('#cars-data-layer').on('click','.car-info',function(){
+      $('.car-info').removeClass('active');
+      $(this).addClass('active');
+      console.log($(this).data('carname'))
+      $('#model').val($(this).data('carname'))
+  })
+
+
+  $('.model-input-contaner').click(function(){
+    $('.model-input-contaner').toggleClass('focus');
+    $('#cars-data-layer').toggleClass('open-layer')
+  })
+
+
+  function getFirstCarType(){
+    if(Object.keys(carsData).length)
+      return Object.keys(carsData)[0]
+    else
+      return '';
+  }
+
+  createCarListLayer(carsData, getFirstCarType());
+
 })
