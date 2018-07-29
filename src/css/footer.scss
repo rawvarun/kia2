@@ -1,7 +1,7 @@
 .footer {
     background-color: $charcoal;
     padding: 20px;
-    color: $white;
+    color: $footer-color;
     text-transform: capitalize;
     @media screen and (min-width: 767px) {
         padding: 65px;
@@ -16,9 +16,13 @@
         &::after {
             content: '';
             background-image: url('search.svg');
-            background-size: 10px;
-            height: 10px;
-            width: 10px;
+            background-size: 18px;
+            background-repeat: no-repeat;
+            height: 18px;
+            width: 18px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
         }
     }
     &-search {
@@ -38,11 +42,13 @@
         &.footer-right-side {
             padding: 20px 20px 0;
         }
-        li {
-            padding: 5px 0;
-            list-style: none;
+    }
+    li {
+        padding: 5px 0;
+        list-style: none;
+        cursor: pointer;
+        @media screen and (min-width: 767px) {
             width: fit-content;
-            cursor: pointer;
         }
     }
     &-right-side {
@@ -66,21 +72,56 @@
             float: left;
             border: 0;
         }
+        li {
+            @media screen and (max-width: 767px) {
+                padding: 10px 0;
+            }
+        }
     }
     &-bottom {
-        opacity: 0.5;
         .col-sm-4 {
             float: left;
             padding: 20px 20px 0;
+            opacity: 0.5;
+            @media screen and (min-width: 767px) {
+                padding-top: 40px;
+            }
+            &:nth-of-type(2) {
+                @media screen and (max-width: 767px) {
+                    padding-top: 0px;
+                }
+            }
+            &:first-child {
+                opacity: 1;
+            }
         }
         li {
             padding-right: 20px;
-            display: inline;
+            float: left;
+            margin-right: 16px;
+            img {
+                max-width: 45px;
+            }
         }
         .text-centre {
             @media screen and (min-width: 767px) {
                 text-align: center;
             }
+        }
+    }
+    li[aria-expanded="true"] {
+        .oi {
+            &::before {
+                content: '\E037';
+            }
+        }
+    }
+    .oi {
+        color: $white;
+        float: right;
+        top: 6px;
+        &::before {
+            content: '\E034';
         }
     }
 }

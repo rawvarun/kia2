@@ -8,6 +8,7 @@
     @import './header.scss';
     @import './homeBanner.scss';
     @import './homeCarousels.scss';
+
     @import './footer.scss';
     *,
     html,
@@ -297,3 +298,6 @@
 
 
     @import './inventory-search.scss';
+
+    @import './footer.scss'; //remaining css moved to global.scss
+
