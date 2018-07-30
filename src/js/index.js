@@ -187,10 +187,10 @@ $(function() {
     $('[data-toggle]').on('click', function() {
       $(this).closest('.list-item').toggleClass('expanded-list')
     });
-    $('.card-body-close').on('click', function() {
-      $('.collapse').removeClass('show');
-      $('.collapse').closest('slideInUp').removeClass('expanded-list');
-    });
+    // $('.card-body-close').on('click', function() {
+    //   $('.collapse').removeClass('show');
+    //   $('.collapse').closest('slideInUp').removeClass('expanded-list');
+    // });
   }
 
   $('#toggle-nav').on('click', function() {
@@ -384,12 +384,22 @@ $(function() {
       return '';
   }
 
+  function bindSearchInventoryBtn() {
+    $('.js-search-invent-btn').on('click', function() {
+      debugger;
+      if ($('#model').val() !== '') {
+        window.location.href = 'inventory.html';
+      }
+    })
+  }
+
   createCarListLayer(carsData, getFirstCarType());
 
   loadInventoryListing(inventoryData);
   bindLoadMoreInventories();
   bindSort();
   bindRangeSliderEvents();
+  bindSearchInventoryBtn()
   if (location.href.indexOf('inventory') === -1) {
     animateFeatureDrawer();
     animateFamilyLineup();
