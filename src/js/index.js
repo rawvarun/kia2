@@ -334,7 +334,7 @@ $(function () {
     }
     
   });
-})
+
   $('.change-theme').on('click', function loadCSS() {
     var stylesheet = document.styleSheets[1];
     if (stylesheet.disabled === false) {
