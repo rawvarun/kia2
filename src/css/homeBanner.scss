@@ -2,12 +2,11 @@
     .carousel-item {
         @media screen and (max-width: 767px) {
             img {
-                transform: translateX(-30%);
-                width: auto;
-                height: 100%;
+                // transform: translateX(-30%);
+                width: auto !important;
+                height: 240px;
             }
         }
-        
     }
     .carousel-indicators {
         justify-content: flex-end;
@@ -19,24 +18,24 @@
         }
     }
     .carousel-indicators li {
-        text-indent: 0 ;
-        margin-right: 2% ;
-        color: #FFF ;
-        background-color: transparent ;
-        width: 65px ;
+        text-indent: 0;
+        margin-right: 2%;
+        color: #FFF;
+        background-color: transparent;
+        width: 65px;
         @media screen and (max-width: 767px) {
             width: auto;
         }
     }
     .carousel-indicators .active {
-        background-color: red ;
+        background-color: red;
     }
     .carousel-caption {
         text-align: left;
-        top: 10% ;
-        left: 5% ;
-        right: 0 ;
-        width: 30% ;
+        top: 10%;
+        left: 5%;
+        right: 0;
+        width: 30%;
         @media screen and (max-width: 767px) {
             top: 10%;
             padding-top: 5px;
@@ -45,13 +44,13 @@
     }
     h5 {
         font-family: designk-bold;
-        font-size: 40px ;
-        line-height: 40px ;
-        margin-bottom: 20px ;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 20px;
         @media (min-width: 768px) {
-            font-size: 50px ;
-            line-height: 50px ;
-            margin-bottom: 20px ;
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 20px;
         }
     }
     .small-text {

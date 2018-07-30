@@ -22,6 +22,7 @@ body {
     margin: auto;
 }
 
+
 /* Safari */
 
 @-webkit-keyframes spin {
@@ -396,6 +397,7 @@ body {
     animation: spin 2s linear infinite;
     margin: auto;
 }
+
 
 /* Safari */
 
@@ -783,7 +785,7 @@ header {
     }
     header a .hamburger,
     header a:hover .hamburger,
-        {
+    {
         width: 30px;
         color: $black;
         height: 30px;
@@ -861,6 +863,10 @@ input[type="range"].multirange.ghost {
         border-color: $light-black;
         color: $light-black;
     }
+}
+
+.dropdown-item {
+    color: #000;
 }
 
 .navigation .gps-logo,
