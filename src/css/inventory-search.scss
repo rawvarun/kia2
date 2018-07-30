@@ -132,7 +132,6 @@
 }
 
 .car-image {
-    background: url('../assets/images/soul.png') 0 0 no-repeat;
     width: 122px;
     height: 58px;
     display: inline-block;
@@ -328,7 +327,7 @@
         float: left;
         margin: 5px 5px;
         padding: 5px 5px 5px 0px;
-        border-top: 2px solid #fff;
+        border-top: 2px solid $white;
         &.active .car-type-text,
         .car-type-text {
             margin-left: 0;
@@ -337,7 +336,7 @@
             content: none;
         }
         &.active {
-            border-top: 2px solid #ff0000;
+            border-top: 2px solid #e12f3b;
             padding: 5px 5px 5px 0px;
         }
     }
