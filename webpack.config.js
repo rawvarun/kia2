@@ -9,7 +9,10 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist/')
+    path: path.resolve(__dirname, 'dist/content')
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist/content'),
   },
   plugins: [
     new CopyWebpackPlugin([
@@ -58,7 +61,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpeg|jpg|gif|svg)$/,
-        loader: 'file-loader?name=[hash].[ext]&outputPath=../dist/assets/images/&publicPath=assets/images/'
+        loader: 'file-loader?name=[hash].[ext]&outputPath=assets/images/&publicPath=assets/images/'
       },
       { test: /\.hbs$/, loader: 'handlebars-loader' }
     ]
