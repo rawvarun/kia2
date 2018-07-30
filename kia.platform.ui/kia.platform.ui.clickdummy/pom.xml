@@ -38,7 +38,7 @@
                 <groupId>org.apache.sling</groupId>
                 <artifactId>htl-maven-plugin</artifactId>
                 <configuration>
-                    <sourceDirectory>src/main/jcr_root/clickdummy/app/jcr_root/apps</sourceDirectory>
+                    <sourceDirectory>src/main/jcr_root/clickdummy/dist</sourceDirectory>
                 </configuration>
                 <executions>
                     <execution>
@@ -57,7 +57,7 @@
                 <groupId>com.day.jcr.vault</groupId>
                 <artifactId>content-package-maven-plugin</artifactId>
                 <configuration>
-					<builtContentDirectory>target/package/jcr_root/clickdummy/app/jcr_root</builtContentDirectory>
+					<builtContentDirectory>target/package/jcr_root/clickdummy/dist</builtContentDirectory>
                     <filters>
 						<filter>
 							<root>/apps/kia/platform/components</root>
@@ -70,6 +70,9 @@
 						<filter>
 							<mode>merge</mode>
                             <root>/etc/designs/kia/platform/clientlibs</root>
+                        </filter>
+						<filter>
+                            <root>/content/kia-ux</root>
                         </filter>
                     </filters>
                 </configuration>
