@@ -272,11 +272,10 @@ img {
 
 @media only screen and (max-width: 767px) {
 
-    img {
-        &.image-container {
+    .body{
             position: relative;
             top: 60px
-        }
+      
     }
     .pincode-container {
         width: 100%;
