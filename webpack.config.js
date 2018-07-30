@@ -13,7 +13,8 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([
-      { from: 'src/assets/images', to: 'assets/images' }
+      { from: 'src/assets/images', to: 'assets/images' },
+      { from: './*.html', to: '.' }
     ])
   ],
   module: {
