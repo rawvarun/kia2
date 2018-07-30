@@ -22,6 +22,7 @@ body {
     margin: auto;
 }
 
+
 /* Safari */
 
 @-webkit-keyframes spin {
@@ -293,8 +294,7 @@ header {
         height: 30px;
     }
     header a .hamburger,
-    header a:hover .hamburger,
-        {
+    header a:hover .hamburger {
         width: 30px;
         color: #000;
         height: 30px;
@@ -397,6 +397,7 @@ body {
     animation: spin 2s linear infinite;
     margin: auto;
 }
+
 
 /* Safari */
 
@@ -777,7 +778,7 @@ header {
     }
     header a .hamburger,
     header a:hover .hamburger,
-        {
+    {
         width: 30px;
         color: $black;
         height: 30px;
@@ -854,5 +855,23 @@ input[type="range"].multirange.ghost {
     &-item {
         border-color: $light-black;
         color: $light-black;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1279px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    body {
+        font-size: 16px;
     }
 }
