@@ -128,12 +128,16 @@ nav {
         width: 80px;
         height: 80px;
         background-repeat: no-repeat;
+        position: relative;
+        top: -70px;
     }
     .carousel-control-next-icon {
         background: url('../assets/images/arrow-right.png');
         width: 80px;
         height: 80px;
         background-repeat: no-repeat;
+        position: relative;
+        top: -70px;
     }
     .carousel-control-prev,
     .carousel-control-next {
