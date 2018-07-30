@@ -354,7 +354,6 @@ $(function() {
 
   function bindSearchInventoryBtn() {
     $('.js-search-invent-btn').on('click', function() {
-      debugger;
       if ($('#model').val() !== '') {
         window.location.href = 'inventory.html';
       }
