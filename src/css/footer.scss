@@ -1,7 +1,7 @@
 .footer {
     background-color: $charcoal;
     padding: 20px;
-    color: $white;
+    color: $footer-color;
     text-transform: capitalize;
     @media screen and (min-width: 767px) {
         padding: 65px;
@@ -42,13 +42,13 @@
         &.footer-right-side {
             padding: 20px 20px 0;
         }
-        li {
-            padding: 5px 0;
-            list-style: none;
-            cursor: pointer;
-            @media screen and (min-width: 767px) {
-                width: fit-content;
-            }
+    }
+    li {
+        padding: 5px 0;
+        list-style: none;
+        cursor: pointer;
+        @media screen and (min-width: 767px) {
+            width: fit-content;
         }
     }
     &-right-side {
@@ -74,15 +74,15 @@
         }
         li {
             @media screen and (max-width: 767px) {
-                padding: 7px 0;
+                padding: 10px 0;
             }
         }
     }
     &-bottom {
-        opacity: 0.5;
         .col-sm-4 {
             float: left;
             padding: 20px 20px 0;
+            opacity: 0.5;
             @media screen and (min-width: 767px) {
                 padding-top: 40px;
             }
@@ -90,6 +90,9 @@
                 @media screen and (max-width: 767px) {
                     padding-top: 0px;
                 }
+            }
+            &:first-child {
+                opacity: 1;
             }
         }
         li {

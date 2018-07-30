@@ -69,12 +69,12 @@
         border-radius: 0 !important;
         margin-right: 15px !important;
         background-color: $light-background;
-        border: 0;
         @media screen and (min-width: 767px) {
             padding: 16px 35px !important;
         }
         &:hover {
-            background-color: $kia-red;
+            background-color: $black;
+            color: $light-background;
         }
     }
 }

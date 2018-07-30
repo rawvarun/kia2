@@ -14,7 +14,7 @@ $(function() {
   });
   $(".single-item1").slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 3,
     arrows: false,
     responsive: [
@@ -39,6 +39,31 @@ $(function() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
+        }
+      }
+    ]
+  });
+  $('.carousel4').slick({
+    centerMode: true,
+    centerPadding: '8%',
+    infinite: false,
+    slidesToShow: 2,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true,
+          centerPadding: '8%',
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: true,
+          centerPadding: '8%',
+          slidesToShow: 1
         }
       }
     ]

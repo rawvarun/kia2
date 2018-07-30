@@ -1,0 +1,49 @@
+{
+    "SUVs/Crossovers": [
+    {
+        "name": "2018 Soulssdd",
+        "imagePath": ""
+    },
+    {
+        "name": "2018 Soul",
+        "imagePath": ""
+    },
+    {
+        "name": "2018 Soul",
+        "imagePath": ""
+    }],
+    "Sedans": [
+    {
+        "name": "2018 Soul sedan",
+        "imagePath": ""
+    },
+    {
+        "name": "2018 Soul",
+        "imagePath": ""
+    },
+    {
+        "name": "2018 Soul",
+        "imagePath": ""
+    }],
+    "Hatchbacks": [
+    {
+        "name": "2018 Soul hatchbacks",
+        "imagePath": ""
+    },
+    {
+        "name": "2018 Soul",
+        "imagePath": ""
+    },
+    {
+        "name": "2018 Soul",
+        "imagePath": ""
+    },
+    {
+        "name": "2018 Soul",
+        "imagePath": ""
+    },
+    {
+        "name": "2018 Soul",
+        "imagePath": ""
+    }]
+}
