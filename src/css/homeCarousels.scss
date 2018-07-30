@@ -206,8 +206,13 @@ nav {
         margin-right: 20px;
         color: $med-gray;
         padding-top: 10px;
+        &:hover {
+            border-top: 3px solid $kia-red;
+            transition: border-top .2s ease-in-out;
+        }
         &.active {
             border-top: 3px solid $kia-red;
+            transition: border-top 1s ease-in-out;
             color: $black;
             font-weight: bold;
         }
