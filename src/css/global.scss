@@ -22,7 +22,6 @@ body {
     margin: auto;
 }
 
-
 /* Safari */
 
 @-webkit-keyframes spin {
@@ -398,7 +397,6 @@ body {
     margin: auto;
 }
 
-
 /* Safari */
 
 @-webkit-keyframes spin {
@@ -526,6 +524,13 @@ body {
     line-height: 24px;
     color: $black;
     background-color: $btn-background;
+    &.bg-dark {
+        background-color: $bg-dark !important;
+        &:hover {
+            background-color: black !important;
+            color: white !important;
+        }
+    }
 }
 
 .list-item {
@@ -778,7 +783,7 @@ header {
     }
     header a .hamburger,
     header a:hover .hamburger,
-    {
+        {
         width: 30px;
         color: $black;
         height: 30px;

@@ -32,18 +32,10 @@ $(function() {
     slidesToShow: 2,
     arrows: true,
     responsive: [{
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           centerMode: true,
-          centerPadding: '8%',
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          centerMode: true,
-          centerPadding: '8%',
+          centerPadding: '0%',
           slidesToShow: 1
         }
       }
