@@ -22,7 +22,6 @@ body {
     margin: auto;
 }
 
-
 /* Safari */
 
 @-webkit-keyframes spin {
@@ -194,11 +193,6 @@ i {
     height: auto;
 }
 
-.card-body {
-    background: #E9E9E9;
-    border: 0;
-}
-
 .btn[data-toggle],
 .btn[data-toggle]:focus {
     color: #000;
@@ -249,7 +243,7 @@ header {
     width: 85%;
 }
 
- :focus {
+:focus {
     outline: none;
 }
 
@@ -300,7 +294,7 @@ header {
     }
     header a .hamburger,
     header a:hover .hamburger,
-    {
+        {
         width: 30px;
         color: #000;
         height: 30px;
@@ -403,7 +397,6 @@ body {
     animation: spin 2s linear infinite;
     margin: auto;
 }
-
 
 /* Safari */
 
@@ -514,7 +507,7 @@ body {
 }
 
 .inventory-container {
-    background: rgba(0, 0, 0, 0.05);
+    background: $light-black;
 }
 
 .btn {
@@ -530,6 +523,7 @@ body {
     font-family: designk-medium;
     font-size: 16px;
     line-height: 24px;
+    color: $black;
 }
 
 .list-item {
@@ -600,7 +594,7 @@ i {
 }
 
 .card-body {
-    background: #E9E9E9;
+    background: $card-bg;
     border: 0;
     justify-content: space-between;
     flex-direction: unset;
@@ -782,7 +776,7 @@ header {
     }
     header a .hamburger,
     header a:hover .hamburger,
-    {
+        {
         width: 30px;
         color: $black;
         height: 30px;
@@ -848,5 +842,16 @@ input[type="range"].multirange.ghost {
     }
     .dealername {
         margin-top: 1.5rem;
+    }
+}
+
+.dropdown {
+    &-menu {
+        border-color: $light-black;
+        color: $light-black;
+    }
+    &-item {
+        border-color: $light-black;
+        color: $light-black;
     }
 }
