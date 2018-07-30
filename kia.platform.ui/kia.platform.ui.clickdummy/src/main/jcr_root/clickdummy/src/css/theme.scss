@@ -1,0 +1,24 @@
+$kia-red: rgb(151, 17, 35);
+$black: #ffffff; //Background, Text, UI, Accents
+$charcoal: #1F1F1F; // Background
+$med-gray: #666666; // - Text, UI, Accents
+$gray-UI: #3b2424;
+$white: #0a0101;
+$light-background: rgba(0, 0, 0, 0.5);
+$body-color: #e7eff7;
+$dark-red:rgb(151, 17, 35);
+$light-black: rgba(255, 255, 255, 0.5);
+$footer-color:#ffffff;
+$header-background: #1F1F1F;
+$border-color:rgba(0, 0, 0, 0.5);
+$card-bg:#666666;
+$btn-background:#d3d3d357;
+@import './_fonts.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+@import './vendor/_import.scss';
+@import './global.scss';
+@import './header.scss';
+@import './homeBanner.scss';
+@import './homeCarousels.scss';
+@import './inventory-search.scss';
+@import './footer.scss';

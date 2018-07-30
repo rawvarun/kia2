@@ -2,7 +2,8 @@
 To start with setup, following dependencies must met:
 1. NodeJS
 2. Webpack(3+) (Globally)
-3. Webpack-dev-server (globally)
+3. Webpack-cli (Globally)
+4. Webpack-dev-server (globally)
 
 **Setup**
 To start with setup, run following command
@@ -12,3 +13,9 @@ To start with setup, run following command
 All dependencies will be installed (refer package.json for more details). Now we are ready to fly. Run following command and see your code running on localhost:8080
 
 ```npm run build```
+
+For AEM build (Dev enviroment)
+```npm run aembuilddev```
+
+For AEM build (Prod enviroment)
+```npm run aembuildprod```

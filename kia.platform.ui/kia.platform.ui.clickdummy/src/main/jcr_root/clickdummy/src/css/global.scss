@@ -1,3 +1,345 @@
+*,
+html,
+body {
+    font-family: designk-regular;
+}
+
+.error-msg {
+    background: #fff;
+    font-size: 18px;
+    color: #C21B31;
+}
+
+.loader {
+    border: 8px solid #fce4e4;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.selected-filters i {
+    color: rgba(0, 0, 0, 0.25);
+    line-height: 16px;
+    font-size: 10px;
+    vertical-align: text-top;
+}
+
+.hamburger-ul {
+    max-width: 30px;
+    list-style-type: none;
+}
+
+.slick-controllers {
+    list-style-type: none;
+}
+
+.slick-controllers li {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.icon-blue {
+    background: #495672;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+}
+
+.icon-grey {
+    background: #99989E;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+}
+
+.icon-silver {
+    background: #CBCCD0;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+}
+
+.bg-white {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.nav-icon1 span {
+    background: rgba(0, 0, 0, 0.50);
+}
+
+.list-group-item {
+    border: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 12px;
+}
+
+.container-fluid .row {
+    margin: 0;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.inventory-container {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+    background: transparent;
+    text-transform: capitalize;
+    font-family: designk-bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btn.border-grey {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    font-family: designk-bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.list-item {
+    background: #fff;
+    height: 280px;
+}
+
+.dd-check a {
+    position: relative;
+    padding-left: 30px;
+}
+
+i {
+    font-size: 10px;
+    padding: 0 5px;
+}
+
+.dd-check a i {
+    top: 12px;
+    left: 14px;
+    font-size: 10px;
+    position: absolute;
+}
+
+.dd-check a:hover i:before {
+    content: '\e033';
+    color: red;
+}
+
+.form-control.radius-0 {
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.facets-container :input {
+    width: 100%;
+}
+
+.facets-container .dropdown button {
+    text-align: left;
+}
+
+.facets-container .dropdown button:after {
+    right: 20px;
+    position: absolute;
+    TOP: 14px;
+}
+
+.range-container {
+    position: relative;
+}
+
+.range-val {
+    display: block;
+}
+
+.grey-text {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.info-text {
+    font-size: 12px;
+}
+
+.expanded-list {
+    height: auto;
+}
+
+.btn[data-toggle],
+.btn[data-toggle]:focus {
+    color: #000;
+    box-shadow: none;
+}
+
+.btn[data-toggle][aria-expanded=true] i::before {
+    content: '\e037';
+}
+
+.btn[data-toggle][aria-expanded=false] i::before {
+    content: '\e034';
+}
+
+.font-0 {
+    font-size: 0;
+}
+
+header {
+    top: 0;
+}
+
+.model-name {
+    color: #000;
+}
+
+.model-price {
+    color: rgba(0, 0, 0, .5);
+    font-size: 12px;
+}
+
+.model-price strong {
+    color: #000;
+    font-size: 28px;
+}
+
+.facets-head,
+.facets-subhead {
+    font-family: designk-bold;
+    clear: both;
+}
+
+.facets-subhead {
+    font-size: 14px;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+:focus {
+    outline: none;
+}
+
+.active-controller {
+    border: 3px solid #6f6f6f;
+}
+
+.delay-0 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+}
+
+.delay-1 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.delay-2 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+}
+
+.explore {
+    background: url('../assets/images/explore-down.png');
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 145px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        left: 40%;
+        position: absolute;
+    }
+    .float-xs-right {
+        float: right;
+    }
+    .w-xs-45 {
+        width: 45%;
+    }
+    header a.hamburger-container {
+        width: 30px;
+        height: 30px;
+    }
+    header a .hamburger,
+    header a:hover .hamburger {
+        width: 30px;
+        color: #000;
+        height: 30px;
+        line-height: 30px;
+    }
+    header {
+        max-width: 100vw;
+        top: 0;
+    }
+    .inventory-container {
+        margin-top: 50px;
+    }
+    .list-item {
+        height: 480px;
+    }
+    .expanded-list {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .facets-container.collapse {
+        display: block;
+    }
+    .container-fluid>div.row {
+        margin-top: 50px;
+    }
+    .align-items-center .product-carousel {
+        padding-left: 40px;
+    }
+    .slick-controllers {
+        text-align: left;
+    }
+    .dealername {
+        margin-top: 1.5rem;
+    }
+    .explore {
+        background-image: url('../assets/images/explore-right.png');
+    }
+}
+
+.hidden {
+    display: none;
+}
+
 @media screen and (min-width:767px) {
     .visible-xs {
         display: none;
@@ -25,5 +367,511 @@
 @media screen and (max-width:767px) {
     .hidden-xs {
         display: none;
+    }
+}
+
+*,
+html,
+body {
+    font-family: designk-regular; // 
+}
+
+body {
+    color: $body-color;
+}
+
+.error-msg {
+    background: $white;
+    font-size: 18px;
+    color: #C21B31;
+}
+
+.loader {
+    border: 8px solid #fce4e4;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.font-bold {
+    font-family: designk-bold;
+}
+
+.selected-filters i {
+    color: $black;
+    opacity: 0.25;
+    line-height: 16px;
+    font-size: 10px;
+    vertical-align: text-top;
+}
+
+.hamburger-ul {
+    max-width: 30px;
+    list-style-type: none;
+}
+
+.slick-controllers {
+    list-style-type: none;
+    text-align: center;
+}
+
+.slick-slide img {
+    max-width: 100%;
+}
+
+.slick-controllers li {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.slick-controllers li div {
+    width: 1rem;
+    height: 1rem;
+}
+
+.dealername {
+    margin-top: 0;
+}
+
+.icon-blue {
+    background: #1c48ad;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+}
+
+.icon-grey {
+    background: #99989E;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+}
+
+.icon-silver {
+    background: #CBCCD0;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+}
+
+.bg-white {
+    color: $black;
+}
+
+.nav-icon1 span {
+    background: $black;
+    opacity: 0.8; // background: rgba(0, 0, 0, 0.50);
+}
+
+.list-group-item {
+    border: 0;
+    padding: 0;
+    color: $black;
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+.container-fluid .row {
+    margin: auto;
+    max-width: 1680px;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.inventory-container {
+    background: $light-black;
+}
+
+.btn {
+    background: transparent;
+    text-transform: capitalize;
+    font-family: designk-medium;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btn.border-grey {
+    border: 1px solid $light-black;
+    font-family: designk-medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    background-color: $btn-background;
+}
+
+.list-item {
+    background: $white;
+    height: 280px;
+}
+
+.dd-check a {
+    position: relative;
+    padding-left: 30px;
+}
+
+i {
+    font-size: 10px;
+    padding: 0 5px;
+}
+
+.dd-check a i {
+    top: 12px;
+    left: 14px;
+    font-size: 10px;
+    position: absolute;
+}
+
+.dd-check a:hover i:before {
+    content: '\e033';
+    color: $kia-red;
+}
+
+.form-control.radius-0 {
+    border-radius: 0;
+    border: 1px solid $light-black;
+}
+
+.facets-container :input {
+    width: 100%;
+}
+
+.facets-container .dropdown button {
+    text-align: left;
+}
+
+.facets-container .dropdown button:after {
+    right: 20px;
+    position: absolute;
+    TOP: 14px;
+}
+
+.range-container {
+    position: relative;
+}
+
+.range-val {
+    display: block;
+}
+
+.grey-text {
+    color: $black;
+    opacity: 0.5;
+}
+
+.info-text {
+    font-size: 12px;
+}
+
+.expanded-list {
+    height: auto;
+}
+
+.card-body {
+    background: $card-bg;
+    border: 0;
+    justify-content: space-between;
+    flex-direction: unset;
+    padding: 40px 25px;
+    .card-body-close {
+        background-image: url("../assets/images/icon-clear-medium-black.png");
+        background-repeat: no-repeat;
+        background-position: 98% 12px;
+        cursor: pointer;
+        position: absolute;
+        width: 28px;
+        height: 35px;
+        top: 6px;
+        right: 14px;
+    }
+    .card-body-title {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .text-underline {
+        text-decoration: underline;
+    }
+    .card-body-left {
+        width: 40%;
+        border-right: 1px solid #cccccc;
+        .address {
+            font-size: 14px;
+            color: $black;
+            opacity: 0.5;
+        }
+        .vin {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    }
+    .card-body-right {
+        width: 60%;
+        padding-left: 25px;
+        .color-section,
+        .powertrain-section,
+        .packages-options-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .powertrain-section {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .color-section-left,
+        .powertrain-section-left,
+        .packages-options-section-left {
+            width: 20%;
+        }
+        .color-section-right,
+        .powertrain-section-right,
+        .packages-options-section-right {
+            width: 80%;
+        }
+        .powertrain-section-right span,
+        .packages-options-section-right p {
+            color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 5px;
+        }
+        .color-section-right {
+            .red,
+            .black {
+                width: 20px;
+                height: 20px;
+                border-radius: 12px;
+                display: inline-flex;
+                margin-right: 10px;
+            }
+            .red {
+                background: $kia-red;
+            }
+            .black {
+                background: #000;
+            }
+            p {
+                display: inline-flex;
+                margin-bottom: 5px;
+                vertical-align: text-top;
+            }
+        }
+    }
+    .full-specs-text {
+        color: $black;
+    }
+}
+
+.btn[data-toggle],
+.btn[data-toggle]:focus {
+    color: $black;
+    box-shadow: none;
+}
+
+.btn[data-toggle][aria-expanded=true] i::before {
+    content: '\e037';
+}
+
+.btn[data-toggle][aria-expanded=false] i::before {
+    content: '\e034';
+}
+
+.font-0 {
+    font-size: 0;
+}
+
+header {
+    top: 0;
+}
+
+.model-name {
+    color: $black;
+}
+
+.model-price {
+    color: $black;
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.model-price strong {
+    color: $black;
+    font-size: 28px;
+}
+
+.facets-head,
+.facets-subhead {
+    font-family: designk-bold;
+    clear: both;
+}
+
+.facets-subhead {
+    font-size: 14px;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+:focus {
+    outline: none;
+}
+
+.active-controller {
+    border: 3px solid #6f6f6f;
+}
+
+.delay-0 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+}
+
+.delay-1 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.delay-2 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        left: 40%;
+        position: absolute;
+    }
+    .float-xs-right {
+        float: right;
+    }
+    .w-xs-45 {
+        width: 45%;
+    }
+    header a.hamburger-container {
+        width: 30px;
+        height: 30px;
+    }
+    header a .hamburger,
+    header a:hover .hamburger,
+    {
+        width: 30px;
+        color: $black;
+        height: 30px;
+        line-height: 30px;
+    }
+    header {
+        max-width: 100vw;
+        top: 0;
+    }
+    .inventory-container {
+        margin-top: 50px;
+    }
+    .list-item {
+        height: 525px;
+    }
+    .expanded-list {
+        height: auto;
+    }
+    .card-body {
+        justify-content: space-between;
+        flex-direction: column;
+        .card-body-left,
+        .card-body-right {
+            width: 100%;
+        }
+        .card-body-left {
+            border: 0;
+        }
+        .card-body-right {
+            padding-left: 0;
+        }
+        .card-body-right {
+            .color-section-left,
+            .powertrain-section-left,
+            .packages-options-section-left {
+                width: 38%;
+            }
+            .color-section-right,
+            .powertrain-section-right,
+            .packages-options-section-right {
+                width: 62%;
+            }
+        }
+    }
+}
+
+input[type="range"].multirange.ghost {
+    --range-color: $dark-red;
+}
+
+@media only screen and (min-width: 768px) {
+    .facets-container.collapse {
+        display: block;
+    }
+    .container-fluid>div.row {
+        margin-top: 60px;
+    }
+    .align-items-center .product-carousel {
+        padding-left: 40px;
+    }
+    .slick-controllers {
+        text-align: left;
+    }
+    .dealername {
+        margin-top: 1.5rem;
+    }
+}
+
+.dropdown {
+    &-menu {
+        border-color: $light-black;
+        color: $light-black;
+    }
+    &-item {
+        border-color: $light-black;
+        color: $light-black;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1279px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    body {
+        font-size: 16px;
     }
 }

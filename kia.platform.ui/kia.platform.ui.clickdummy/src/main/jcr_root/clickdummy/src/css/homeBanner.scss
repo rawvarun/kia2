@@ -19,13 +19,14 @@
         left: 5% !important;
         right: 0 !important;
         width: 30% !important;
-        @media screen and (min-width: 767px) {
+        @media screen and (max-width: 767px) {
             top: 0;
             padding-top: 5px;
             width: 40%;
         }
     }
     h5 {
+        font-family: designk-bold;
         font-size: 20px !important;
         line-height: 20px !important;
         margin-bottom: 20px !important;
@@ -40,22 +41,21 @@
             margin-bottom: 20px !important;
         }
         @media (min-width: 1200px) {
-            font-size: 60px !important;
+            font-size: 50px !important;
             line-height: 60px !important;
             margin-bottom: 20px !important;
         }
     }
     .small-text {
-        font-size: 14px !important;
+        font-size: 12px !important;
         line-height: 14px !important;
-        @media screen and (min-width: 767px) {
-            font-size: 12px !important;
+        @media screen and (max-width: 767px) {
             margin-bottom: 2px;
         }
     }
     .bold-text {
-        font-weight: bold !important;
-        @media screen and (min-width: 767px) {
+        font-family: designk-bold;
+        @media screen and (max-width: 767px) {
             font-size: 13px;
         }
     }
@@ -69,8 +69,12 @@
         border-radius: 0 !important;
         margin-right: 15px !important;
         background-color: $light-background;
-        @media screen and (max-width: 767px) {
-            padding: 16px 25px !important;
+        @media screen and (min-width: 767px) {
+            padding: 16px 35px !important;
+        }
+        &:hover {
+            background-color: $black;
+            color: $light-background;
         }
     }
 }

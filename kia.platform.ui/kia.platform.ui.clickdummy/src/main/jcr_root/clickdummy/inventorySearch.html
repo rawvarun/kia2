@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inventory Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- <header class="w-100">
+            <h1>Header <a class="visible-xs float-right mr-5 font-0 hamburger-container" data-toggle="collapse" href="#filterpanel" role="button" aria-expanded="false" aria-controls="filterpanel">hamburger<i class="oi oi-menu hamburger"></i></a></h1>
+
+        </header> -->
+        <!-- <hr class="margin-bottom-0" /> -->
+        <header class="bg-white theme-fixed">
+            <nav>
+                <ul class="hidden-xs navigation">
+                    <li class="underline"><a href="#">meet our vehicles</a></li>
+                    <li class="underline"><a href="#">shopping made easy</a></li>
+                </ul>
+                <!-- <ul class="visible-xs p-0 m-0 hamburger-ul">
+                    <li><a class="visible-xs float-left mr-5 font-0 hamburger-container" data-toggle="collapse" href="#filterpanel" role="button" aria-expanded="false" aria-controls="filterpanel">hamburger<i class="oi oi-menu hamburger"></i></a></li>
+                </ul> -->
+                <a href="index.html" class="logo"><img src="src/assets/images/kia-logo.png" alt="kia" class="kia-logo2"></a>
+                <ul class="hidden-xs navigation secondary-nav">
+                    <li class="underline"><a href="#">zip code</a></li>
+                    <li class="underline"><a href="#">dealers</a></li>
+                    <li class="underline"><a href="#">offers</a></li>
+                    <li class="underline"><a href="inventorySearch.html">Inventory</a></li>
+                    <li class="underline"><a href="#">my kia</a></li>
+                </ul>
+                <div class="visible-xs">
+                    <input type="checkbox" class="toggle-nav" id="toggle-nav">
+                    <div class="nav-icon1 mr-4">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-container">
+                        <ul class="navigation">
+                            <li class="underline"><a href="#">meet our vehicles</a></li>
+                            <li class="underline"><a href="#">shopping made easy</a></li>
+                        </ul>
+                        <ul class="navigation">
+                            <li class="underline"><a href="#">zip code</a></li>
+                            <li class="underline"><a href="#">dealers</a></li>
+                            <li class="underline"><a href="#">offers</a></li>
+                            <li class="underline"><a href="inventorySearch.html">Inventory</a></li>
+                            <li class="underline"><a href="#">my kia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="body">
+            <div>
+                <picture>
+                    <source srcset="/src/assets/images/inventory-baneer-mobile.jpg" media="(max-width: 767px)">
+                    <img src="/src/assets/images/inventory-header.jpg" alt="hero banner" class="image-container" />
+                </picture>
+
+            </div>
+            <div class="search-section">
+                <div class="pincode-container">
+                    <span class="header-input">Set your location.</span>
+                    <div class="body-input">
+                        <div class="pincode-input-container">
+                            <input type="text" name="pincode" class="text-input-pincode" placeholder="Zip Code">
+                            <span class="pincode-go"></span>
+                        </div>
+                        <span class="gps-logo"></span><span class="input-sub-header">Use My Location</span>
+                    </div>
+                </div>
+                <div class="models-container">
+                    <span class="header-input">Pick your Kia.</span>
+                    <div class="model-input-contaner">
+                        <input type="text" name="model" class="text-input-models" id="model" placeholder="Model">
+                        <span class="dir-arrow"></span>
+                    </div>
+                    <div class="cars-data" id="cars-data-layer">
+
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button class="btn-search-inventory js-search-invent-btn">See Inventory</button>
+                    <span class="btn-subheader">Continue without model</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="src/assets/images/kia-logo.png" alt="kia" class="kia-logo2">
+                <div class="search-div">
+                    <input type="search" placeholder="Search The Site" class="footer-search">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="footer-left-side col-sm-4">
+                <li class="underline">meet our vehicles</li>
+                <li class="underline">shopping made easy</li>
+                <li class="underline">certified pre-own</li>
+                <li class="underline">owners</li>
+            </ul>
+            <ul class="footer-right-side visible-xs">
+                <div class="footer-right-side-div">
+                    <li data-toggle="collapse" data-target="#ul1">about our vehicle</li>
+                    <ul id="ul1" class="collapse">
+                        <li>warranty</li>
+                        <li>performance</li>
+                        <li>safety</li>
+                        <li>service & parts</li>
+                    </ul>
+                </div>
+                <div class="footer-right-side-div">
+                    <li data-toggle="collapse" data-target="#ul2">corporate</li>
+                    <ul id="ul2" class="collapse">
+                        <li>careers</li>
+                        <li>investors</li>
+                        <li>contact us</li>
+                    </ul>
+                </div>
+                <div class="footer-right-side-div">
+                    <li data-toggle="collapse" data-target="#ul3">what's new</li>
+                    <ul id="ul3" class="collapse">
+                        <li>partenership</li>
+                        <li>upcoming events</li>
+                        <li>concept vehicle</li>
+                    </ul>
+                </div>
+                <div class="footer-right-side-div">
+                    <li data-toggle="collapse" data-target="#ul4">legal</li>
+                    <ul id="ul4" class="collapse">
+                        <li>recalls</li>
+                        <li>privacy</li>
+                    </ul>
+                </div>
+            </ul>
+            <ul class="footer-right-side hidden-xs col-sm-8">
+                <div class="footer-right-side-div col-sm-3">
+                    <li class="underline">about our vehicle</li>
+                    <ul class="">
+                        <li class="underline">warranty</li>
+                        <li class="underline">performance</li>
+                        <li class="underline">safety</li>
+                        <li class="underline">service & parts</li>
+                    </ul>
+                </div>
+                <div class="footer-right-side-div col-sm-3">
+                    <li class="underline">corporate</li>
+                    <ul class="">
+                        <li class="underline">careers</li>
+                        <li class="underline">investors</li>
+                        <li class="underline">contact us</li>
+                    </ul>
+                </div>
+                <div class="footer-right-side-div col-sm-3">
+                    <li class="underline">what's new</li>
+                    <ul class="">
+                        <li class="underline">partenership</li>
+                        <li class="underline">upcoming events</li>
+                        <li class="underline">concept vehicle</li>
+                    </ul>
+                </div>
+                <div class="footer-right-side-div col-sm-3">
+                    <li class="underline">legal</li>
+                    <ul class="">
+                        <li class="underline">recalls</li>
+                        <li class="underline">privacy</li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="footer-bottom row">
+            <ul class="col-sm-4">
+                <li>pin</li>
+                <li>fb</li>
+            </ul>
+            <ul class="col-sm-4 text-centre">
+                <li>language</li>
+            </ul>
+            <span class="col-sm-4 text-centre">&copy; 2018 Kia Motors</span>
+        </div>
+    </footer>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>

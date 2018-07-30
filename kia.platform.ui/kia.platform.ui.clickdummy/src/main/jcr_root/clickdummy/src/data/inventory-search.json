@@ -1,0 +1,57 @@
+{
+    "SUVs/Crossovers": [
+    {
+        "name": "2018 Soul",
+        "imagePath": "/src/assets/images/2018_soul.png"
+    },
+    {
+        "name": "2018 Niro",
+        "imagePath": "/src/assets/images/2018_Niro.png"
+    },
+    {
+        "name": "2018 Sportage",
+        "imagePath": "/src/assets/images/2018_Sportage.png"
+    }],
+    "Sedans": [
+    {
+        "name": "2018 Sorento Sedan",
+        "imagePath": "/src/assets/images/2019_Sorento.png"
+    },
+    {
+        "name": "2018 Soul Hatchbacks",
+        "imagePath": "/src/assets/images/2018_soul.png"
+    },
+    {
+        "name": "2018 Niro",
+        "imagePath": "/src/assets/images/2018_soul.png"
+    },
+    {
+        "name": "2018 Sportage",
+        "imagePath": "/src/assets/images/2018_Sportage.png"
+    }],
+    "Hatchbacks": [
+    {
+        "name": "2018 Soul Hatchbacks",
+        "imagePath": "/src/assets/images/2018_soul.png"
+    },
+    {
+        "name": "2018 Niro",
+        "imagePath": "/src/assets/images/2018_Niro.png"
+    },
+    {
+        "name": "2018 Sportage",
+        "imagePath": "/src/assets/images/2018_Sportage.png"
+    },
+	 {
+        "name": "2018 Soul",
+        "imagePath": "/src/assets/images/2018_soul.png"
+    },
+    {
+        "name": "2018 Niro",
+        "imagePath": "/src/assets/images/2018_Niro.png"
+    },
+    {
+        "name": "2018 Sportage",
+        "imagePath": "/src/assets/images/2018_Sportage.png"
+    }]
+}

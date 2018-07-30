@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --watch | webpack-dev-server --compress"
+    "build": "webpack --watch | webpack-dev-server --compress",
+    "aembuilddev": "webpack --mode development",
+    "aembuildprod": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,7 @@
     "html-loader": "^0.5.5",
     "jquery": "^3.3.1",
     "jshint": "^2.9.5",
+    "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.2",
     "popper.js": "^1.14.3",
     "sass-loader": "^7.0.3",
@@ -46,7 +49,6 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.2",
-    "grunt": "^1.0.3",
     "handlebars": "^4.0.11",
     "handlebars-loader": "^1.7.0",
     "json-loader": "^0.5.7",

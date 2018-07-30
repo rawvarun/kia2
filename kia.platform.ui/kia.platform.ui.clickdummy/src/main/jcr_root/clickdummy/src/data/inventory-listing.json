@@ -30,7 +30,51 @@
           "alt-text": "sorento silver"
         }
       ],
-      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+      "detail-info": {
+		  "address-title": "Kia Downtown Los Angeles",
+		  "address":"1945 S Figueroa Street<br/>Los Angeles, CA 90007<br/>(310) 955-0855",
+		  "vin": "VIN 5XYPK4A58KG447344",
+		  "sticker-title": "Window Sticker",
+		  "color-variants": [{
+			  "color": "red",
+			  "title": "Passion Red"
+			},
+			{
+			  "color": "black",
+			  "title": "Black Satin Cloth"
+			}],
+		   "powertrain": "Auto | 3.3L V6 | AWD",
+		   "packages-options": [{
+		      "package-name": "LX Premium Package",
+			  "pacakge-tooltip": "This is LX Premium Package description"
+		   },
+		   {
+		      "package-name": "carpeted Floor Mats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "SX Mahogany Leather Seat",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Ventilated Front Seats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Power Front Passenger's Seat w/ Lumbar",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Auto-dimming Rearview Mirror",
+			  "pacakge-tooltip": ""
+		   }
+		   ,
+		   {
+		      "package-name": "LED Overhead Interior Lighting",
+			  "pacakge-tooltip": ""
+		   }],
+		   "full-specs-url": "#"
+		}
     },
     {
       "dealer-name": "Kia Downtown Los Angeles (6 mi)",
@@ -62,7 +106,51 @@
           "alt-text": "sorento silver"
         }
       ],
-      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+      "detail-info": {
+		  "address-title": "Kia Downtown Los Angeles",
+		  "address":"1945 S Figueroa Street<br/>Los Angeles, CA 90007<br/>(310) 955-0855",
+		  "vin": "VIN 5XYPK4A58KG447344",
+		  "sticker-title": "Window Sticker",
+		  "color-variants": [{
+			  "color": "red",
+			  "title": "Passion Red"
+			},
+			{
+			  "color": "black",
+			  "title": "Black Satin Cloth"
+			}],
+		   "powertrain": "Auto | 3.3L V6 | AWD",
+		   "packages-options": [{
+		      "package-name": "LX Premium Package",
+			  "pacakge-tooltip": "This is LX Premium Package description"
+		   },
+		   {
+		      "package-name": "carpeted Floor Mats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "SX Mahogany Leather Seat",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Ventilated Front Seats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Power Front Passenger's Seat w/ Lumbar",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Auto-dimming Rearview Mirror",
+			  "pacakge-tooltip": ""
+		   }
+		   ,
+		   {
+		      "package-name": "LED Overhead Interior Lighting",
+			  "pacakge-tooltip": ""
+		   }],
+		   "full-specs-url": "#"
+		}
     },
     {
       "dealer-name": "Kia Downtown Los Angeles (6 mi)",
@@ -94,7 +182,51 @@
           "alt-text": "sorento silver"
         }
       ],
-      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+      "detail-info": {
+		  "address-title": "Kia Downtown Los Angeles",
+		  "address":"1945 S Figueroa Street<br/>Los Angeles, CA 90007<br/>(310) 955-0855",
+		  "vin": "VIN 5XYPK4A58KG447344",
+		  "sticker-title": "Window Sticker",
+		  "color-variants": [{
+			  "color": "red",
+			  "title": "Passion Red"
+			},
+			{
+			  "color": "black",
+			  "title": "Black Satin Cloth"
+			}],
+		   "powertrain": "Auto | 3.3L V6 | AWD",
+		   "packages-options": [{
+		      "package-name": "LX Premium Package",
+			  "pacakge-tooltip": "This is LX Premium Package description"
+		   },
+		   {
+		      "package-name": "carpeted Floor Mats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "SX Mahogany Leather Seat",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Ventilated Front Seats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Power Front Passenger's Seat w/ Lumbar",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Auto-dimming Rearview Mirror",
+			  "pacakge-tooltip": ""
+		   }
+		   ,
+		   {
+		      "package-name": "LED Overhead Interior Lighting",
+			  "pacakge-tooltip": ""
+		   }],
+		   "full-specs-url": "#"
+		}
     },
     {
       "dealer-name": "Kia Downtown Los Angeles (6 mi)",
@@ -126,7 +258,51 @@
           "alt-text": "sorento silver"
         }
       ],
-      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+      "detail-info": {
+		  "address-title": "Kia Downtown Los Angeles",
+		  "address":"1945 S Figueroa Street<br/>Los Angeles, CA 90007<br/>(310) 955-0855",
+		  "vin": "VIN 5XYPK4A58KG447344",
+		  "sticker-title": "Window Sticker",
+		  "color-variants": [{
+			  "color": "red",
+			  "title": "Passion Red"
+			},
+			{
+			  "color": "black",
+			  "title": "Black Satin Cloth"
+			}],
+		   "powertrain": "Auto | 3.3L V6 | AWD",
+		   "packages-options": [{
+		      "package-name": "LX Premium Package",
+			  "pacakge-tooltip": "This is LX Premium Package description"
+		   },
+		   {
+		      "package-name": "carpeted Floor Mats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "SX Mahogany Leather Seat",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Ventilated Front Seats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Power Front Passenger's Seat w/ Lumbar",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Auto-dimming Rearview Mirror",
+			  "pacakge-tooltip": ""
+		   }
+		   ,
+		   {
+		      "package-name": "LED Overhead Interior Lighting",
+			  "pacakge-tooltip": ""
+		   }],
+		   "full-specs-url": "#"
+		}
     },
     {
       "dealer-name": "Kia Downtown Los Angeles (6 mi)",
@@ -158,7 +334,51 @@
           "alt-text": "sorento silver"
         }
       ],
-      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+      "detail-info": {
+		  "address-title": "Kia Downtown Los Angeles",
+		  "address":"1945 S Figueroa Street<br/>Los Angeles, CA 90007<br/>(310) 955-0855",
+		  "vin": "VIN 5XYPK4A58KG447344",
+		  "sticker-title": "Window Sticker",
+		  "color-variants": [{
+			  "color": "red",
+			  "title": "Passion Red"
+			},
+			{
+			  "color": "black",
+			  "title": "Black Satin Cloth"
+			}],
+		   "powertrain": "Auto | 3.3L V6 | AWD",
+		   "packages-options": [{
+		      "package-name": "LX Premium Package",
+			  "pacakge-tooltip": "This is LX Premium Package description"
+		   },
+		   {
+		      "package-name": "carpeted Floor Mats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "SX Mahogany Leather Seat",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Ventilated Front Seats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Power Front Passenger's Seat w/ Lumbar",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Auto-dimming Rearview Mirror",
+			  "pacakge-tooltip": ""
+		   }
+		   ,
+		   {
+		      "package-name": "LED Overhead Interior Lighting",
+			  "pacakge-tooltip": ""
+		   }],
+		   "full-specs-url": "#"
+		}
     },
     {
       "dealer-name": "Kia Downtown Los Angeles (6 mi)",
@@ -190,7 +410,51 @@
           "alt-text": "sorento silver"
         }
       ],
-      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+      "detail-info": {
+		  "address-title": "Kia Downtown Los Angeles",
+		  "address":"1945 S Figueroa Street<br/>Los Angeles, CA 90007<br/>(310) 955-0855",
+		  "vin": "VIN 5XYPK4A58KG447344",
+		  "sticker-title": "Window Sticker",
+		  "color-variants": [{
+			  "color": "red",
+			  "title": "Passion Red"
+			},
+			{
+			  "color": "black",
+			  "title": "Black Satin Cloth"
+			}],
+		   "powertrain": "Auto | 3.3L V6 | AWD",
+		   "packages-options": [{
+		      "package-name": "LX Premium Package",
+			  "pacakge-tooltip": "This is LX Premium Package description"
+		   },
+		   {
+		      "package-name": "carpeted Floor Mats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "SX Mahogany Leather Seat",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Ventilated Front Seats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Power Front Passenger's Seat w/ Lumbar",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Auto-dimming Rearview Mirror",
+			  "pacakge-tooltip": ""
+		   }
+		   ,
+		   {
+		      "package-name": "LED Overhead Interior Lighting",
+			  "pacakge-tooltip": ""
+		   }],
+		   "full-specs-url": "#"
+		}
     },
     {
       "dealer-name": "Kia Downtown Los Angeles (6 mi)",
@@ -222,7 +486,51 @@
           "alt-text": "sorento silver"
         }
       ],
-      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+      "detail-info": {
+		  "address-title": "Kia Downtown Los Angeles",
+		  "address":"1945 S Figueroa Street<br/>Los Angeles, CA 90007<br/>(310) 955-0855",
+		  "vin": "VIN 5XYPK4A58KG447344",
+		  "sticker-title": "Window Sticker",
+		  "color-variants": [{
+			  "color": "red",
+			  "title": "Passion Red"
+			},
+			{
+			  "color": "black",
+			  "title": "Black Satin Cloth"
+			}],
+		   "powertrain": "Auto | 3.3L V6 | AWD",
+		   "packages-options": [{
+		      "package-name": "LX Premium Package",
+			  "pacakge-tooltip": "This is LX Premium Package description"
+		   },
+		   {
+		      "package-name": "carpeted Floor Mats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "SX Mahogany Leather Seat",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Ventilated Front Seats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Power Front Passenger's Seat w/ Lumbar",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Auto-dimming Rearview Mirror",
+			  "pacakge-tooltip": ""
+		   }
+		   ,
+		   {
+		      "package-name": "LED Overhead Interior Lighting",
+			  "pacakge-tooltip": ""
+		   }],
+		   "full-specs-url": "#"
+		}
     },
     {
       "dealer-name": "Kia Downtown Los Angeles (6 mi)",
@@ -254,7 +562,51 @@
           "alt-text": "sorento silver"
         }
       ],
-      "detail-info": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+      "detail-info": {
+		  "address-title": "Kia Downtown Los Angeles",
+		  "address":"1945 S Figueroa Street<br/>Los Angeles, CA 90007<br/>(310) 955-0855",
+		  "vin": "VIN 5XYPK4A58KG447344",
+		  "sticker-title": "Window Sticker",
+		  "color-variants": [{
+			  "color": "red",
+			  "title": "Passion Red"
+			},
+			{
+			  "color": "black",
+			  "title": "Black Satin Cloth"
+			}],
+		   "powertrain": "Auto | 3.3L V6 | AWD",
+		   "packages-options": [{
+		      "package-name": "LX Premium Package",
+			  "pacakge-tooltip": "This is LX Premium Package description"
+		   },
+		   {
+		      "package-name": "carpeted Floor Mats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "SX Mahogany Leather Seat",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Ventilated Front Seats",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Power Front Passenger's Seat w/ Lumbar",
+			  "pacakge-tooltip": ""
+		   },
+		   {
+		      "package-name": "Auto-dimming Rearview Mirror",
+			  "pacakge-tooltip": ""
+		   }
+		   ,
+		   {
+		      "package-name": "LED Overhead Interior Lighting",
+			  "pacakge-tooltip": ""
+		   }],
+		   "full-specs-url": "#"
+		}
     }
   ]
 }
