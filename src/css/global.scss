@@ -858,6 +858,13 @@ input[type="range"].multirange.ghost {
     }
 }
 
+.navigation .gps-logo,
+.navigation .gps-logo-black {
+    position: absolute;
+    top: 1px;
+    left: -2px;
+}
+
 @media screen and (min-width:768px) and (max-width:991px) {
     body {
         font-size: 10px;
