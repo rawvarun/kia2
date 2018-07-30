@@ -57,6 +57,7 @@ $(function() {
     $('.error-msg').remove();
     $('.inventory-container').append(inventoryList(listingObj));
     startSlider();
+    bindMoreDetail();
   }
 
   function clearListing() {
@@ -161,15 +162,18 @@ $(function() {
     }
   }
 
+  function bindMoreDetail() {
+    $('[data-toggle]').on('click', function() {
+      $(this).closest('.list-item').toggleClass('expanded-list')
+    });
+    $('.card-body-close').on('click', function() {
+      $('.collapse').removeClass('show');
+      $('.collapse').closest('slideInUp').removeClass('expanded-list');
+    });
+  }
 
-  $('[data-toggle]').on('click', function() {
-    $(this).closest('.list-item').toggleClass('expanded-list')
-  });
 
-  $('.card-body-close').on('click', function() {
-    $('.collapse').removeClass('show');
-    $('.collapse').closest('slideInUp').removeClass('expanded-list');
-  });
+
 
   $('#toggle-nav').on('click', function() {
     if (this.checked == true) {
@@ -195,6 +199,8 @@ $(function() {
   bindLoadMoreInventories();
   bindSort();
   bindRangeSliderEvents();
-  animateFeatureDrawer();
-  animateFamilyLineup();
+  if (location.href.indexOf('inventory') === -1) {
+    animateFeatureDrawer();
+    animateFamilyLineup();
+  }
 });

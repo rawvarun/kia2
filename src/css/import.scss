@@ -386,6 +386,17 @@
         -webkit-animation-delay: 2s;
     }
     
+    .explore {
+        background: url('../assets/images/explore-down.png');
+        background-size: 36px 36px;
+        background-repeat: no-repeat;
+        background-position: right;
+        width: 145px;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+    }
+    
     @media only screen and (max-width: 767px) {
         .logo {
             left: 40%;
@@ -465,5 +476,8 @@
         }
         .dealername {
             margin-top: 1.5rem;
+        }
+        .explore {
+            background-image: url('../assets/images/explore-right.png');
         }
     }
