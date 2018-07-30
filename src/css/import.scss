@@ -1,12 +1,14 @@
     //@import "bootstrap-sprockets";
     //$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
     @import './colors.scss';
+    @import './_fonts.scss';
     @import '~bootstrap/scss/bootstrap.scss';
     @import './vendor/_import.scss';
     @import './global.scss';
     @import './header.scss';
     @import './homeBanner.scss';
     @import './homeCarousels.scss';
+
     @import './footer.scss';
     *,
     html,
@@ -296,3 +298,10 @@
     .hidden {
         display: none;
     }
+
+
+
+    @import './inventory-search.scss';
+
+    @import './footer.scss'; //remaining css moved to global.scss
+

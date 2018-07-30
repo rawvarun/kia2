@@ -8,7 +8,7 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist/')
   },
   module: {
     rules: [{
@@ -46,12 +46,12 @@ module.exports = {
         ]
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=src/css/fonts/[name].[ext]'
+        test: /\.(eot|otf|ttf|woff|woff2)$/,
+        loader: 'file-loader?name=assets/fonts/[name].[ext]'
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
-        loader: 'file-loader?name=[hash].[ext]&outputPath=../assets/images/&publicPath=assets/images/'
+        loader: 'file-loader?name=[hash].[ext]&outputPath=../dist/assets/images/&publicPath=assets/images/'
       },
       { test: /\.hbs$/, loader: 'handlebars-loader' }
     ]

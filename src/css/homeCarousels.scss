@@ -1,7 +1,14 @@
+.carousel1,
+.carousel2,
+.carousel3 {
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
 .carousel1 {
     margin-bottom: 50px;
     .carousel {
-        padding-bottom: 75px;
+        padding-bottom: 60px;
     }
     .carousel-indicators {
         justify-content: left;
@@ -18,36 +25,44 @@
             }
         }
     }
-    p {
+    p:not(.carousel1-desc) {
         line-height: 1;
     }
     &-year {
         position: absolute;
-        top: 120px;
+        top: 130px;
         color: $white;
         width: 100%;
         text-align: center;
+        font-size: 13px;
+        text-transform: capitalize;
+        @media screen and (max-width: 767px) {
+            top: 95px;
+        }
     }
     &-head {
         position: absolute;
-        top: 160px;
+        top: 165px;
         color: $white;
         width: 100%;
-        font-size: 38px;
-        font-weight: bold;
+        font-size: 75px;
+        font-family: designk-bold;
         text-align: center;
+        @media screen and (max-width: 767px) {
+            top: 110px;
+            font-size: 38px;
+        }
     }
     &-desc {
         position: absolute;
         bottom: 50px;
         width: 100%;
         text-align: center;
-    }
-    &-price {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        text-align: center;
+        @media screen and (max-width: 767px) {
+            padding: 0 80px;
+            line-height: 1.5;
+            bottom: 0;
+        }
     }
     &-btns {
         @media screen and (max-width: 767px) {
@@ -60,17 +75,19 @@
         bottom: 0;
         right: 30px;
         text-decoration: underline;
+        cursor: pointer;
         @media screen and (min-width: 767px) {
-            right: 200px;
+            right: 350px;
         }
     }
     &-btn {
         background-color: $black;
         color: $white;
         font-size: 14px;
-        padding: 20px 30px;
+        padding: 20px 40px;
         border: 0;
-        margin-top: 20px;
+        margin-top: 30px;
+        cursor: pointer;
         &:hover {
             background-color: $kia-red;
         }
@@ -78,6 +95,31 @@
             position: absolute;
             bottom: 0;
             right: 0;
+            margin-right: 100px;
+        }
+    }
+    .carousel-item {
+        @media screen and (max-width: 767px) {
+            height: -webkit-fill-available;
+        }
+    }
+    &-item {
+        overflow: hidden;
+    }
+    img {
+        -webkit-animation: myMove 8s 1 ease-in-out;
+        -moz-animation: myMove 8s 1 ease-in-out;
+        -o-animation: myMove 8s 1 ease-in-out;
+        -ms-animation: myMove 8s 1 ease-in-out;
+        animation: myMove 8s 1 ease-in-out;
+        margin-bottom: 100px;
+        @media screen and (min-width: 500px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 500px) {
+            width: 456px;
+            height: 413px;
+            margin: 0 -37px;
         }
     }
 }
@@ -85,7 +127,7 @@
 .carousel3 {
     a {
         text-decoration: none;
-        color: #FFF;
+        color: $white;
     }
     .slick-container {
         margin: 0 auto;
@@ -102,12 +144,14 @@
         h5 {
             font-size: 2.5rem;
             text-align: left;
-            width: 50%;
+            width: 100px;
+            font-family: designk-bold;
         }
         .small-text {
             text-align: left;
             font-size: 12px;
             max-width: 200px;
+            opacity: 0.8;
         }
         .carousel-link {
             position: absolute;

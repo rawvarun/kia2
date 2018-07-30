@@ -1,0 +1,349 @@
+@import './colors.scss';
+.pincode-container,
+.models-container {
+    float: left;
+    width: 20%;
+}
+
+.header-input {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.input-sub-header {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-top: 20px;
+    display: inline-block;
+    border-bottom: 1px solid #999;
+    line-height: 15px;
+}
+
+.search-section {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
+}
+
+.gps-logo {
+    background: url('../assets/images/gps.png') 0 0 no-repeat;
+    width: 20px;
+    height: 18px;
+    display: inline-block;
+}
+
+.pincode-container,
+.models-container {
+    width: 30%;
+    padding: 30px;
+}
+
+.pincode-container {
+    border-right: 1px solid $light-gray;
+}
+
+.btn-container {
+    border-left: 1px solid $light-gray;
+}
+
+.text-input-pincode {
+    border: 1px solid $light-gray;
+    padding: 15px 70px 13px 15px;
+    width: 100%;
+    outline: none;
+}
+
+.pincode-input-container {
+    position: relative;
+}
+
+.pincode-input-container,
+.model-input-contaner {
+
+    margin-top: 20px
+}
+
+.text-input-models {
+    border: none;
+    outline: none;
+    padding: 14px 55px 14px 14px;
+    width: 100%;
+}
+
+.btn-search-inventory {
+    background-color: #000;
+    border: none;
+    display: block;
+    color: $white;
+    padding: 17px 85px;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 13px;
+    margin: 37px 0 0;
+    cursor: pointer
+}
+
+.model-input-contaner {
+    position: relative;
+    border: 1px solid $light-gray;
+    .dir-arrow::after {
+        content: '\E034';
+        display: inline-block;
+        font-family: 'Icons';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        margin-left: 10px;
+    }
+    &.focus .dir-arrow::after {
+        content: '\E037';
+    }
+}
+
+.cars-data {
+    border: 1px solid $light-gray;
+    margin-top: 10px;
+    width: 450px;
+    overflow-y: scroll;
+    background: $white;
+    box-sizing: content-box;
+    padding: 15px;
+    max-height: 500px;
+    z-index: 10;
+    position: relative;
+}
+
+.cars-type {
+    float: left;
+    width: 170px;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.cars-list {
+    float: left;
+    width: 260px;
+}
+
+.car-image {
+    background: url('../assets/images/soul.png') 0 0 no-repeat;
+    width: 122px;
+    height: 58px;
+    display: inline-block;
+}
+
+.car-info {
+    border-bottom: 1px solid $light-gray;
+    padding: 15px 0;
+    position: relative;
+    cursor: pointer;
+    &:last-child {
+        border: none
+    }
+
+    &.active {
+        .active-car {
+            background: url('../assets/images/select-car.png') 0 0 no-repeat;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 0;
+            top: 28px;
+        }
+    }
+}
+
+.car-info .car-text {
+    top: 30px;
+    position: absolute;
+    left: 140px;
+    color: #0e0a0a;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.car-type-text {
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #000;
+    margin-left: 8px;
+}
+
+.li-cars-category {
+    margin: 5px 0;
+    cursor: pointer;
+    &.active .car-type-text {
+        font-weight: 700;
+        margin-left: 6px;
+    }
+
+    &::before {
+        content: '';
+        border: 3px solid $white;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+    &.active::before {
+        border-color: #ff0000;
+    }
+}
+
+.btn-container {
+    float: left;
+    padding:48px 30px 36px
+}
+
+
+
+.cars-data {
+    display: none;
+    display: none;
+    &.open-layer {
+        display: block;
+    }
+}
+
+.btn-search-inventory:hover {
+    background-color: #bc2628;
+}
+
+::-webkit-input-placeholder,
+ ::-moz-placeholder,
+ :-ms-input-placeholder,
+ :-moz-placeholder {
+    color: $med-gray;
+}
+
+
+.pincode-go {
+    color: $white;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    display: inline-block;
+    background: url('../assets/images/right-arrow.png') 22px 20px no-repeat #000;
+    padding: 27px 26px;
+    width: 20px;
+    height: 20px;
+}
+
+.dir-arrow {
+    right: 26px;
+    position: absolute;
+    top: 17px;
+}
+
+.btn-subheader {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-top: 16px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    &::after {
+        content: '\E036';
+        display: inline-block;
+        font-family: 'Icons';
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        margin-left: 5px;
+        font-size: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+
+    .pincode-container {
+        width: 100%;
+        margin: 30px auto 30px auto;
+        float: none;
+    }
+
+    .models-container {
+        width: 100%;
+        margin: 30px auto 30px auto;
+        float: none;
+        border-top: 1px solid $light-gray;
+        padding-top: 20px;
+    }
+
+    .btn-search-inventory {
+        width: 100%;
+        margin: 30px auto;
+        display: block;
+        padding: 20px;
+        font-size: 20px;
+        float: none;
+    }
+
+    .pincode-container,
+    .models-container {
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .pincode-container {
+        padding: 0;
+    }
+
+    .models-container {
+        padding: 20px 0 0 0;
+    }
+
+    .btn-container {
+        padding: 0;
+        width: 100%;
+        margin: 30px auto 30px auto;
+        float: none;
+        border: none;
+    }
+
+    .model-input-contaner .dir-arrow::after {
+        margin-left: 0;
+    }
+
+    .cars-type,
+    .cars-list {
+        float: none;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .li-cars-category {
+        float: left;
+        margin: 5px 5px;
+        padding: 5px 5px 5px 0px;
+        border-top: 2px solid #fff;
+        &.active .car-type-text,
+        .car-type-text {
+            margin-left: 0;
+        }
+        &::before {
+            content: none;
+        }
+        &.active {
+            border-top: 2px solid #ff0000;
+            padding: 5px 5px 5px 0px;
+        }
+    }
+
+    .cars-data {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

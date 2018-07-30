@@ -1,0 +1,18 @@
+                        <div class="cars-type">
+                            <ul>
+                            {{#each data}}
+                                <li class="li-cars-category" data-cartype="{{@key}}">
+                                    <span class="car-type-text">{{length @key}}</span>
+                                </li>
+                            {{/each}}
+                            </ul>
+                        </div>
+                        <div class="cars-list">
+                            {{#each carsListData}}
+                            <div class="car-info" data-carname="{{this.name}}">
+                                <span class="car-image"></span>
+                                <span class="car-text" >{{this.name}}</span>
+                                <span class="active-car"></span>
+                            </div>
+                           {{/each}}
+                        </div>
