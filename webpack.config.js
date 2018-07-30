@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: "development",
@@ -10,6 +11,12 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist/')
   },
+  plugins: [
+    new CopyWebpackPlugin([
+      { from: 'src/assets/images', to: 'assets/images' },
+      { from: './*.html', to: '.' }
+    ])
+  ],
   module: {
     rules: [{
         test: /\.js$/, // include .js files
@@ -50,7 +57,7 @@ module.exports = {
         loader: 'file-loader?name=assets/fonts/[name].[ext]'
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/,
+        test: /\.(png|jpeg|jpg|gif|svg)$/,
         loader: 'file-loader?name=[hash].[ext]&outputPath=../dist/assets/images/&publicPath=assets/images/'
       },
       { test: /\.hbs$/, loader: 'handlebars-loader' }

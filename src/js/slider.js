@@ -41,4 +41,21 @@ $(function() {
       }
     ]
   });
+  if($(window).outerWidth() < 768) {
+    $('.js-carsTypes').slick({
+      slidesToShow: 4,
+      infinite: false,
+      centerMode: true,
+      responsive: [{
+        breakpoint: 767,
+        settings: {
+          centerMode: false,
+          slidesToShow: 3,
+          variableWidth: true
+        }
+      }
+    ]
+    });
+  }
+  
 });

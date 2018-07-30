@@ -34,6 +34,13 @@
     display: inline-block;
 }
 
+.gps-logo-black {
+    background: url('../assets/images/gps-logo-black.png') 0 0 no-repeat;
+    width: 20px;
+    height: 18px;
+    display: inline-block;
+}
+
 .pincode-container,
 .models-container {
     width: 33%;
@@ -61,7 +68,6 @@
 
 .pincode-input-container,
 .model-input-contaner {
-
     margin-top: 20px
 }
 
@@ -145,7 +151,6 @@
     &:last-child {
         border: none
     }
-
     &.active {
         .active-car {
             background: url('../assets/images/select-car.png') 0 0 no-repeat;
@@ -183,14 +188,12 @@
         font-weight: 700;
         margin-left: 6px;
     }
-
     &::before {
         content: '';
         border: 3px solid $white;
         display: inline-block;
         border-radius: 5px;
     }
-
     &.active::before {
         border-color: #ff0000;
     }
@@ -199,10 +202,8 @@
 .btn-container {
     float: left;
     padding: 48px 30px 36px;
-    width:33%
+    width: 33%
 }
-
-
 
 .cars-data {
     display: none;
@@ -222,7 +223,6 @@
  :-moz-placeholder {
     color: $med-gray;
 }
-
 
 .pincode-go {
     color: $white;
@@ -269,20 +269,16 @@ img {
     }
 }
 
-
 @media only screen and (max-width: 767px) {
-
-    .body{
-            position: relative;
-            top: 60px
-      
+    .body {
+        position: relative;
+        top: 60px
     }
     .pincode-container {
         width: 100%;
         margin: 30px auto 30px auto;
         float: none;
     }
-
     .models-container {
         width: 100%;
         margin: 30px auto 30px auto;
@@ -290,7 +286,6 @@ img {
         border-top: 1px solid $light-gray;
         padding-top: 20px;
     }
-
     .btn-search-inventory {
         width: 100%;
         margin: 30px auto;
@@ -299,22 +294,18 @@ img {
         font-size: 20px;
         float: none;
     }
-
     .pincode-container,
     .models-container {
         border-left: none;
         border-right: none;
         border-bottom: none;
     }
-
     .pincode-container {
         padding: 0;
     }
-
     .models-container {
         padding: 20px 0 0 0;
     }
-
     .btn-container {
         padding: 0;
         width: 100%;
@@ -322,18 +313,15 @@ img {
         float: none;
         border: none;
     }
-
     .model-input-contaner .dir-arrow::after {
         margin-left: 0;
     }
-
     .cars-type,
     .cars-list {
         float: none;
         width: 100%;
         overflow: hidden;
     }
-
     .li-cars-category {
         float: left;
         margin: 5px 5px;
@@ -351,30 +339,23 @@ img {
             padding: 5px 5px 5px 0px;
         }
     }
-
     .cars-data {
         width: 100%;
         box-sizing: border-box;
     }
 }
 
-
-
-@media only screen and (min-width: 767px) and (max-device-width : 1023px){
+@media only screen and (min-width: 767px) and (max-device-width: 1023px) {
     .pincode-container,
-.models-container {
-    
-    width: 45%;
-}
-    
-.btn-container{
-    border:none;
-    clear:both
-}
-
-.cars-data{
-    position:absolute;
-    right: 70px
-}
-
+    .models-container {
+        width: 45%;
+    }
+    .btn-container {
+        border: none;
+        clear: both
+    }
+    .cars-data {
+        position: absolute;
+        right: 70px
+    }
 }

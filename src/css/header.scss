@@ -15,6 +15,9 @@ header {
     .kia-logo2 {
         height: 30px;
     }
+    .gps-logo-black {
+        display: none;
+    }
     &.theme {
         transition: background-color 0.8s linear;
     }
@@ -28,6 +31,12 @@ header {
         }
         .kia-logo2 {
             display: initial;
+        }
+        .gps-logo {
+            display: none;
+        }
+        .gps-logo-black {
+            display: inline-block;
         }
     }
     &.theme-fixed {
