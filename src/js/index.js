@@ -139,4 +139,127 @@ $(function() {
       $("header").removeClass("theme");
     }
   });
+  
+
+  $('.js-carsTypes').on('click',function(e){
+    $(this).find('li').removeClass('active');
+    $(e.target).addClass('active');
+    var index = $(e.target).index();
+    switch(index) {
+      case 0: 
+        $('.carousel5, .carousel6, .carousel7').addClass('hidden');
+        $('.carousel4').removeClass('hidden');
+        $('.carousel4').slick({
+          centerMode: true,
+          centerPadding: '8%',
+          infinite: false,
+          slidesToShow: 2,
+          arrows: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                centerMode: true,
+                centerPadding: '8%',
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                centerMode: true,
+                centerPadding: '8%',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+        break;
+      case 1: $('.carousel4, .carousel6, .carousel7').addClass('hidden');
+        $('.carousel5').removeClass('hidden');
+        $('.carousel5').slick({
+          centerMode: true,
+          centerPadding: '8%',
+          infinite: false,
+          slidesToShow: 2,
+          arrows: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                centerMode: true,
+                centerPadding: '8%',
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                centerMode: true,
+                centerPadding: '8%',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+        break;
+        case 2: $('.carousel4, .carousel5, .carousel7').addClass('hidden');
+        $('.carousel6').removeClass('hidden');
+        $('.carousel6').slick({
+          centerMode: true,
+          centerPadding: '8%',
+          infinite: false,
+          slidesToShow: 2,
+          arrows: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                centerMode: true,
+                centerPadding: '8%',
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                centerMode: true,
+                centerPadding: '8%',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+        break;
+        case 3: $('.carousel4, .carousel6, .carousel5').addClass('hidden');
+        $('.carousel7').removeClass('hidden');
+        $('.carousel7').slick({
+          centerMode: true,
+          centerPadding: '8%',
+          infinite: false,
+          slidesToShow: 2,
+          arrows: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                centerMode: true,
+                centerPadding: '8%',
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                centerMode: true,
+                centerPadding: '8%',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+        break;
+    }
+    
+  });
 })
