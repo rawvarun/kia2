@@ -12,14 +12,14 @@ var Handlebars = require('handlebars/runtime');
 var inventoryList = require('../templates/inventory-listing.hbs');
 var inventoryData = require('../data/inventory-listing.json');
 
-Handlebars.registerHelper('ifEquals', function (arg1, arg2, options) {
+Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
   return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
 
 
 
-  Handlebars.registerHelper('length', function(keyName) {
-  return keyName + '('+ carsData[keyName].length + ')';
+Handlebars.registerHelper('length', function(keyName) {
+  return keyName + '(' + carsData[keyName].length + ')';
 });
 
 
@@ -34,7 +34,7 @@ var carsData = require('../data/inventory-search.json');
 
 
 
-$(function () {
+$(function() {
 
   function isElementInViewport(el) {
     //special bonus for those using jQuery
@@ -60,11 +60,11 @@ $(function () {
     $('.js-list-model-carousel').slick({
       arrows: false
     });
-    $('.js-list-model-carousel').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    $('.js-list-model-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide) {
       $(".slick-controllers").find('div').removeClass('active-controller');
       $(this).find('[data-slide="' + currentSlide + '"]').find('div').addClass('active-controller');
     });
-    $('.slick-controllers li').on('click', function () {
+    $('.slick-controllers li').on('click', function() {
       var slideno = $(this).data('slide');
       $(this).closest('.js-list-model-carousel').slick('slickGoTo', slideno);
     });
@@ -78,6 +78,7 @@ $(function () {
     $('.error-msg').remove();
     $('.inventory-container').append(inventoryList(listingObj));
     startSlider();
+    bindMoreDetail();
   }
 
   function clearListing() {
@@ -85,7 +86,7 @@ $(function () {
   }
 
   function bindLoadMoreInventories() {
-    $(window).scroll(function () {
+    $(window).scroll(function() {
       if ($('.align-items-center').length) {
         if ($(document).height() <= $(window).scrollTop() + $(window).height() + ($('footer').height() / 2)) {
           var objPriceRange = getPriceRange();
@@ -94,7 +95,7 @@ $(function () {
           } else {
             if ($('.loader').length == 0) {
               $('.inventory-container').append('<div class="loader"></div>');
-              var timeout = setTimeout(function () {
+              var timeout = setTimeout(function() {
                 $('.loader').remove();
                 destroySlider();
                 loadInventoryListing(inventoryData);
@@ -108,21 +109,21 @@ $(function () {
   }
 
   function bindSort() {
-    $('.js-sort-by').siblings('.dropdown-menu').find('a').on('click', function () {
+    $('.js-sort-by').siblings('.dropdown-menu').find('a').on('click', function() {
       var sortby = $(this).data('sortby');
       if ($('.align-items-center').length) {
         if (sortby == 'distance') {
-          inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function (a, b) {
+          inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function(a, b) {
             var x = +a.distance < +b.distance ? -1 : 1;
             return x;
           });
         } else if (sortby == 'pricehigh') {
-          inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function (a, b) {
+          inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function(a, b) {
             var x = a.modelprice < b.modelprice ? 1 : -1;
             return x;
           });
         } else if (sortby == 'pricelow') {
-          inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function (a, b) {
+          inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function(a, b) {
             var x = a.modelprice < b.modelprice ? -1 : 1;
             return x;
           });
@@ -151,7 +152,7 @@ $(function () {
 
 
   function bindRangeSliderEvents() {
-    $('[type=range]').on('change', function () {
+    $('[type=range]').on('change', function() {
       var selectedRange,
         obj = getPriceRange();
       if (obj.lowerVal && obj.higherVal) {
@@ -170,7 +171,7 @@ $(function () {
 
   function animateFeatureDrawer() {
     if (isElementInViewport($('.feature-drawer')[0])) {
-      $('.feature-drawer').find('.bounceInRightAnim').each(function (i) {
+      $('.feature-drawer').find('.bounceInRightAnim').each(function(i) {
         $(this).addClass('animated bounceInRight delay-' + i);
       });
     }
@@ -182,17 +183,17 @@ $(function () {
     }
   }
 
+  function bindMoreDetail() {
+    $('[data-toggle]').on('click', function() {
+      $(this).closest('.list-item').toggleClass('expanded-list')
+    });
+    // $('.card-body-close').on('click', function() {
+    //   $('.collapse').removeClass('show');
+    //   $('.collapse').closest('slideInUp').removeClass('expanded-list');
+    // });
+  }
 
-  $('[data-toggle]').on('click', function () {
-    $(this).closest('.list-item').toggleClass('expanded-list')
-  });
-
-  $('.card-body-close').on('click', function () {
-    $('.collapse').removeClass('show');
-    $('.collapse').closest('slideInUp').removeClass('expanded-list');
-  });
-
-  $('#toggle-nav').on('click', function () {
+  $('#toggle-nav').on('click', function() {
     if (this.checked == true) {
       $("header").addClass("expanded");
     } else {
@@ -201,7 +202,7 @@ $(function () {
     }
   });
 
-  $(window).scroll(function () {
+  $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 50) {
       $("header").addClass("theme");
@@ -211,14 +212,14 @@ $(function () {
     animateFeatureDrawer();
     animateFamilyLineup();
   });
-  
 
-  $('.js-carsTypes').on('click',function(e){
+
+  $('.js-carsTypes').on('click', function(e) {
     $(this).find('li').removeClass('active');
     $(e.target).addClass('active');
     var index = $(e.target).index();
-    switch(index) {
-      case 0: 
+    switch (index) {
+      case 0:
         $('.carousel5, .carousel6, .carousel7').addClass('hidden');
         $('.carousel4').removeClass('hidden');
         $('.carousel4').slick({
@@ -227,8 +228,7 @@ $(function () {
           infinite: false,
           slidesToShow: 2,
           arrows: true,
-          responsive: [
-            {
+          responsive: [{
               breakpoint: 768,
               settings: {
                 centerMode: true,
@@ -247,7 +247,8 @@ $(function () {
           ]
         });
         break;
-      case 1: $('.carousel4, .carousel6, .carousel7').addClass('hidden');
+      case 1:
+        $('.carousel4, .carousel6, .carousel7').addClass('hidden');
         $('.carousel5').removeClass('hidden');
         $('.carousel5').slick({
           centerMode: true,
@@ -255,8 +256,7 @@ $(function () {
           infinite: false,
           slidesToShow: 2,
           arrows: true,
-          responsive: [
-            {
+          responsive: [{
               breakpoint: 768,
               settings: {
                 centerMode: true,
@@ -275,7 +275,8 @@ $(function () {
           ]
         });
         break;
-        case 2: $('.carousel4, .carousel5, .carousel7').addClass('hidden');
+      case 2:
+        $('.carousel4, .carousel5, .carousel7').addClass('hidden');
         $('.carousel6').removeClass('hidden');
         $('.carousel6').slick({
           centerMode: true,
@@ -283,8 +284,7 @@ $(function () {
           infinite: false,
           slidesToShow: 2,
           arrows: true,
-          responsive: [
-            {
+          responsive: [{
               breakpoint: 768,
               settings: {
                 centerMode: true,
@@ -303,7 +303,8 @@ $(function () {
           ]
         });
         break;
-        case 3: $('.carousel4, .carousel6, .carousel5').addClass('hidden');
+      case 3:
+        $('.carousel4, .carousel6, .carousel5').addClass('hidden');
         $('.carousel7').removeClass('hidden');
         $('.carousel7').slick({
           centerMode: true,
@@ -311,8 +312,7 @@ $(function () {
           infinite: false,
           slidesToShow: 2,
           arrows: true,
-          responsive: [
-            {
+          responsive: [{
               breakpoint: 768,
               settings: {
                 centerMode: true,
@@ -332,7 +332,7 @@ $(function () {
         });
         break;
     }
-    
+
   });
 
   $('.change-theme').on('click', function loadCSS() {
@@ -348,40 +348,49 @@ $(function () {
 
 
 
-  function createCarListLayer(carDataObj, keyName){
-      if(!keyName) return;
-       $('#cars-data-layer').html(carsHtml({data: carDataObj,carsListData: carDataObj[keyName]}));
-       console.log($('[data-cartype="'+ keyName +'"]'))
-       $('[data-cartype="'+ keyName +'"]').closest('.li-cars-category').addClass('active')
+  function createCarListLayer(carDataObj, keyName) {
+    if (!keyName) return;
+    $('#cars-data-layer').html(carsHtml({ data: carDataObj, carsListData: carDataObj[keyName] }));
+    console.log($('[data-cartype="' + keyName + '"]'))
+    $('[data-cartype="' + keyName + '"]').closest('.li-cars-category').addClass('active')
   }
 
 
 
-  $('#cars-data-layer').on('click', '.li-cars-category', function(){
+  $('#cars-data-layer').on('click', '.li-cars-category', function() {
     $('.li-cars-category').removeClass('active');
-     createCarListLayer(carsData, $(this).data('cartype'));
+    createCarListLayer(carsData, $(this).data('cartype'));
   })
 
 
-  $('#cars-data-layer').on('click','.car-info',function(){
-      $('.car-info').removeClass('active');
-      $(this).addClass('active');
-      console.log($(this).data('carname'))
-      $('#model').val($(this).data('carname'))
+  $('#cars-data-layer').on('click', '.car-info', function() {
+    $('.car-info').removeClass('active');
+    $(this).addClass('active');
+    console.log($(this).data('carname'))
+    $('#model').val($(this).data('carname'))
   })
 
 
-  $('.model-input-contaner').click(function(){
+  $('.model-input-contaner').click(function() {
     $('.model-input-contaner').toggleClass('focus');
     $('#cars-data-layer').toggleClass('open-layer')
   })
 
 
-  function getFirstCarType(){
-    if(Object.keys(carsData).length)
+  function getFirstCarType() {
+    if (Object.keys(carsData).length)
       return Object.keys(carsData)[0]
     else
       return '';
+  }
+
+  function bindSearchInventoryBtn() {
+    $('.js-search-invent-btn').on('click', function() {
+      debugger;
+      if ($('#model').val() !== '') {
+        window.location.href = 'inventory.html';
+      }
+    })
   }
 
   createCarListLayer(carsData, getFirstCarType());
@@ -390,7 +399,9 @@ $(function () {
   bindLoadMoreInventories();
   bindSort();
   bindRangeSliderEvents();
-  animateFeatureDrawer();
-  animateFamilyLineup();
+  bindSearchInventoryBtn()
+  if (location.href.indexOf('inventory') === -1) {
+    animateFeatureDrawer();
+    animateFamilyLineup();
+  }
 });
-

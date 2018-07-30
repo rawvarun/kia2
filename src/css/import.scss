@@ -8,7 +8,6 @@
     @import './header.scss';
     @import './homeBanner.scss';
     @import './homeCarousels.scss';
-
     @import './footer.scss';
     *,
     html,
@@ -245,6 +244,54 @@
         font-size: 28px;
     }
     
+    .facets-head,
+    .facets-subhead {
+        font-family: designk-bold;
+        clear: both;
+    }
+    
+    .facets-subhead {
+        font-size: 14px;
+    }
+    
+    .w-85 {
+        width: 85%;
+    }
+    
+     :focus {
+        outline: none;
+    }
+    
+    .active-controller {
+        border: 3px solid #6f6f6f;
+    }
+    
+    .delay-0 {
+        -webkit-animation-duration: 1s;
+        -webkit-animation-delay: 0s;
+    }
+    
+    .delay-1 {
+        -webkit-animation-duration: 1s;
+        -webkit-animation-delay: 1s;
+    }
+    
+    .delay-2 {
+        -webkit-animation-duration: 1s;
+        -webkit-animation-delay: 2s;
+    }
+    
+    .explore {
+        background: url('../assets/images/explore-down.png');
+        background-size: 36px 36px;
+        background-repeat: no-repeat;
+        background-position: right;
+        width: 145px;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+    }
+    
     @media only screen and (max-width: 767px) {
         .logo {
             left: 40%;
@@ -293,15 +340,20 @@
         .align-items-center .product-carousel {
             padding-left: 40px;
         }
+        .slick-controllers {
+            text-align: left;
+        }
+        .dealername {
+            margin-top: 1.5rem;
+        }
+        .explore {
+            background-image: url('../assets/images/explore-right.png');
+        }
     }
     
     .hidden {
         display: none;
     }
-
-
-
+    
     @import './inventory-search.scss';
-
     @import './footer.scss'; //remaining css moved to global.scss
-
