@@ -1,7 +1,7 @@
 import $ from 'jquery'
 $(function() {
   $('.js-carousel').slick({
-    // autoplay: true,
+    autoplay: false,
     autoplaySpeed: 7000,
     dots: true,
 
@@ -32,13 +32,29 @@ $(function() {
     slidesToShow: 2,
     arrows: true,
     responsive: [{
+      breakpoint: 767,
+      settings: {
+        centerMode: true,
+        centerPadding: '0%',
+        slidesToShow: 1
+      }
+    }]
+  });
+  if($(window).outerWidth() < 768) {
+    $('.js-carsTypes').slick({
+      slidesToShow: 4,
+      infinite: false,
+      centerMode: true,
+      responsive: [{
         breakpoint: 767,
         settings: {
-          centerMode: true,
-          centerPadding: '0%',
-          slidesToShow: 1
+          centerMode: false,
+          slidesToShow: 3,
+          variableWidth: true
         }
       }
     ]
-  });
+    });
+  }
+  
 });

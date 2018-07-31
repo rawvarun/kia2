@@ -1,42 +1,54 @@
 .heroBanner {
     .carousel-item {
-        @media screen and (max-width: 767px) {
-            img {
-                transform: translateX(-30%);
+        height: 960px;
+        background-color: $black;
+        img {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            @media screen and (max-width: 767px) {
                 width: auto;
                 height: 100%;
+                bottom: -10%;
+            }
+            &.img-correction {
+                bottom: 15%;
+                @media screen and (max-width: 767px) {
+                    width: auto;
+                    height: 50%;
+                    bottom: 15%;
+                    transform: translateX(-7%);
+                }
             }
         }
-        
     }
     .carousel-indicators {
         justify-content: flex-end;
-        margin-right: 0 !important;
+        margin-right: 50px;
+        bottom: 70px;
         @media screen and (max-width: 767px) {
             justify-content: flex-start;
             margin-left: 5%;
-            bottom: 50px;
+            bottom: 70px;
         }
     }
     .carousel-indicators li {
-        text-indent: 0 ;
-        margin-right: 2% ;
-        color: #FFF ;
-        background-color: transparent ;
-        width: 65px ;
-        @media screen and (max-width: 767px) {
-            width: auto;
-        }
+        text-indent: 0;
+        margin-right: 2%;
+        color: $light-background;
+        background-color: transparent;
+        width: auto;
+        font-size: 16px;
     }
     .carousel-indicators .active {
-        background-color: red ;
+        background-color: red;
     }
     .carousel-caption {
         text-align: left;
-        top: 10% ;
-        left: 5% ;
-        right: 0 ;
-        width: 30% ;
+        top: 10%;
+        left: 5%;
+        right: 0;
+        width: 30%;
         @media screen and (max-width: 767px) {
             top: 10%;
             padding-top: 5px;
@@ -45,19 +57,21 @@
     }
     h5 {
         font-family: designk-bold;
-        font-size: 40px ;
-        line-height: 40px ;
-        margin-bottom: 20px ;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 20px;
         @media (min-width: 768px) {
-            font-size: 50px ;
-            line-height: 50px ;
-            margin-bottom: 20px ;
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 20px;
         }
     }
     .small-text {
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 18px;
+        line-height: 18px;
         @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 14px;
             margin-bottom: 2px;
         }
     }
@@ -68,7 +82,7 @@
         }
     }
     .sub-text {
-        color: #E5E5E5;
+        color: $light-background;
         font-size: 12px;
     }
     .btn {

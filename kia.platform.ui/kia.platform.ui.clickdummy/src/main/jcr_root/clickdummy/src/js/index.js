@@ -222,82 +222,100 @@ $(function() {
       case 0:
         $('.carousel5, .carousel6, .carousel7').addClass('hidden');
         $('.carousel4').removeClass('hidden');
-        $('.carousel4').slick({
-          centerMode: true,
-          centerPadding: '8%',
-          infinite: false,
-          slidesToShow: 2,
-          arrows: true,
-          responsive: [{
-              breakpoint: 767,
-              settings: {
-                centerMode: true,
-                centerPadding: '0%',
-                slidesToShow: 1
+        try {
+          $('.carousel4').slick({
+            centerMode: true,
+            centerPadding: '8%',
+            infinite: false,
+            slidesToShow: 2,
+            arrows: true,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                  centerMode: true,
+                  centerPadding: '0%',
+                  slidesToShow: 1
+                }
               }
-            }
-          ]
-        });
+            ]
+          });
+        } catch (error) {
+          console.log('already initialized');
+        }
         break;
+        
       case 1:
         $('.carousel4, .carousel6, .carousel7').addClass('hidden');
         $('.carousel5').removeClass('hidden');
-        $('.carousel5').slick({
-          centerMode: true,
-          centerPadding: '8%',
-          infinite: false,
-          slidesToShow: 2,
-          arrows: true,
-          responsive: [{
-              breakpoint: 767,
-              settings: {
-                centerMode: true,
-                centerPadding: '0%',
-                slidesToShow: 1
+        try {
+          $('.carousel5').slick({
+            centerMode: true,
+            centerPadding: '8%',
+            infinite: false,
+            slidesToShow: 2,
+            arrows: true,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                  centerMode: true,
+                  centerPadding: '0%',
+                  slidesToShow: 1
+                }
               }
-            }
-          ]
-        });
+            ]
+          });
+        } catch (error) {
+          console.log('already initialized');
+        }
         break;
       case 2:
         $('.carousel4, .carousel5, .carousel7').addClass('hidden');
         $('.carousel6').removeClass('hidden');
-        $('.carousel6').slick({
-          centerMode: true,
-          centerPadding: '8%',
-          infinite: false,
-          slidesToShow: 2,
-          arrows: true,
-          responsive: [{
-              breakpoint: 767,
-              settings: {
-                centerMode: true,
-                centerPadding: '0%',
-                slidesToShow: 1
+        try {
+          $('.carousel6').slick({
+            centerMode: true,
+            centerPadding: '8%',
+            infinite: false,
+            slidesToShow: 2,
+            arrows: true,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                  centerMode: true,
+                  centerPadding: '0%',
+                  slidesToShow: 1
+                }
               }
-            }
-          ]
-        });
+            ]
+          });
+        } catch (error) {
+          console.log('already initialized');
+        }
+        
         break;
       case 3:
         $('.carousel4, .carousel6, .carousel5').addClass('hidden');
         $('.carousel7').removeClass('hidden');
-        $('.carousel7').slick({
-          centerMode: true,
-          centerPadding: '8%',
-          infinite: false,
-          slidesToShow: 2,
-          arrows: true,
-          responsive: [{
-              breakpoint: 767,
-              settings: {
-                centerMode: true,
-                centerPadding: '0%',
-                slidesToShow: 1
+        try {
+          $('.carousel7').slick({
+            centerMode: true,
+            centerPadding: '8%',
+            infinite: false,
+            slidesToShow: 2,
+            arrows: true,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                  centerMode: true,
+                  centerPadding: '0%',
+                  slidesToShow: 1
+                }
               }
-            }
-          ]
-        });
+            ]
+          });
+        } catch (error) {
+          console.log('already initialized');
+        }
         break;
     }
 

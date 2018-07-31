@@ -59,20 +59,23 @@
                 <configuration>
 					<builtContentDirectory>target/package/jcr_root/clickdummy/dist</builtContentDirectory>
                     <filters>
-						<filter>
+						<!--<filter>
 							<root>/apps/kia/platform/components</root>
 							<mode>merge</mode>
 							<excludes>
 								<exclude>/apps/kia/platform/install</exclude>
 								<exclude>/apps/kia/platform/configuration</exclude>
 							</excludes>
-						</filter>
+						</filter> -->
 						<filter>
 							<mode>merge</mode>
                             <root>/etc/designs/kia/platform/clientlibs</root>
                         </filter>
 						<filter>
-                            <root>/content/kia-ux</root>
+                            <root>/content/kia-ux/assets</root>
+                        </filter>
+						<filter>
+                            <root>/content/kia-ux/bundle.js</root>
                         </filter>
                     </filters>
                 </configuration>
