@@ -201,6 +201,7 @@ nav {
 .carsList {
     text-align: center;
     margin-top: 70px;
+    
     h2 {
         font-size: 3rem;
         font-weight: bold;
@@ -215,10 +216,9 @@ nav {
         color: $med-gray;
         padding-top: 10px;
         @media screen and (max-width: 767px) {
-            display: block;
-            padding-top: 0;
             margin-top: 10px;
         }
+
         &:hover {
             border-top: 3px solid $kia-red;
             transition: border-top .2s ease-in-out;
@@ -257,6 +257,7 @@ nav {
             padding-bottom: 20px;
             color: #000;
             text-align: center;
+            left: 0;
             h3 {
                 font-weight: bold;
             }
