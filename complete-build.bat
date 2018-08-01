@@ -1,10 +1,11 @@
 @Echo off
 cmd /C mvn clean
-cd roche.pharma.customerportal.ui/roche.pharma.customerportal.ui.clickdummy/src/main/jcr_root/clickdummy
-cmd /C grunt
+cd kia.platform.ui/kia.platform.ui.clickdummy/src/main/jcr_root/clickdummy
+cmd /C npm install
+cmd /C npm run aembuilddev
 cd ../../../../../../
 
 cmd /C  mvn install
-cd roche.pharma.customerportal.complete
+cd kia.platform.complete
 cmd /C mvn install -PautoInstallPackage
 cd ../

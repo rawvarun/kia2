@@ -841,13 +841,4 @@
                         <layout>default</layout>
                 </pluginRepository>
         </pluginRepositories>
-  
-    <distributionManagement>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>artifactory.roche.com-snapshots</name>
-        <url>http://artifactory.roche.com:8081/artifactory/libs-snapshot-local</url>
-    </snapshotRepository>
-    </distributionManagement>
-	
 </project>
