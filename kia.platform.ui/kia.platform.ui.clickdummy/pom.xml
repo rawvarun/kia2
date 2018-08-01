@@ -77,6 +77,9 @@
 						<filter>
                             <root>/content/kia-ux/bundle.js</root>
                         </filter>
+						<filter>
+                            <root>/content/kia-ux/style.css</root>
+                        </filter>
                     </filters>
                 </configuration>
             </plugin>

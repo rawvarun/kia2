@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "development",
@@ -17,8 +18,11 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       { from: 'src/assets/images', to: 'assets/images' },
-      //{ from: './*.html', to: '.' }
-    ])
+      { from: './*.html', to: '.' }
+    ]),
+    new MiniCssExtractPlugin({
+      filename: "style.css",
+    })
   ],
   module: {
     rules: [{
@@ -30,7 +34,7 @@ module.exports = {
           options: {
             formatter: require("eslint/lib/formatters/stylish"),
             camelcase: true,
-            emitErrors: false,
+            emitErrors: true,
             failOnHint: false
           }
         }]
@@ -50,7 +54,8 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          "style-loader", // creates style nodes from JS strings
+          MiniCssExtractPlugin.loader,
+          //"style-loader", // creates style nodes from JS strings
           "css-loader", // translates CSS into CommonJS
           "sass-loader" // compiles Sass to CSS
         ]

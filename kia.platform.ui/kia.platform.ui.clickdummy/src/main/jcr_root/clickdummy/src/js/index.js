@@ -13,7 +13,7 @@ var inventoryList = require('../templates/inventory-listing.hbs');
 var inventoryData = require('../data/inventory-listing.json');
 
 Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
-  return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+  return (arg1 === arg2) ? options.fn(this) : options.inverse(this);
 });
 
 
@@ -93,7 +93,7 @@ $(function() {
           if (objPriceRange.lowerVal > 1000 || objPriceRange.higherVal < 100000) {
             return;
           } else {
-            if ($('.loader').length == 0) {
+            if ($('.loader').length === 0) {
               $('.inventory-container').append('<div class="loader"></div>');
               var timeout = setTimeout(function() {
                 $('.loader').remove();
@@ -112,17 +112,17 @@ $(function() {
     $('.js-sort-by').siblings('.dropdown-menu').find('a').on('click', function() {
       var sortby = $(this).data('sortby');
       if ($('.align-items-center').length) {
-        if (sortby == 'distance') {
+        if (sortby === 'distance') {
           inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function(a, b) {
             var x = +a.distance < +b.distance ? -1 : 1;
             return x;
           });
-        } else if (sortby == 'pricehigh') {
+        } else if (sortby === 'pricehigh') {
           inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function(a, b) {
             var x = a.modelprice < b.modelprice ? 1 : -1;
             return x;
           });
-        } else if (sortby == 'pricelow') {
+        } else if (sortby === 'pricelow') {
           inventoryData["inventory-data"] = inventoryData["inventory-data"].sort(function(a, b) {
             var x = a.modelprice < b.modelprice ? -1 : 1;
             return x;
@@ -141,7 +141,7 @@ $(function() {
   function getPriceRange() {
     var input = document.querySelector('.original[type=range]'),
       selectedRange = '';
-    if (input.valueLow == 0) {
+    if (input.valueLow === 0) {
       input.valueLow = 1;
     }
     return {
@@ -230,20 +230,19 @@ $(function() {
             slidesToShow: 2,
             arrows: true,
             responsive: [{
-                breakpoint: 767,
-                settings: {
-                  centerMode: true,
-                  centerPadding: '0%',
-                  slidesToShow: 1
-                }
+              breakpoint: 767,
+              settings: {
+                centerMode: true,
+                centerPadding: '0%',
+                slidesToShow: 1
               }
-            ]
+            }]
           });
         } catch (error) {
           console.log('already initialized');
         }
         break;
-        
+
       case 1:
         $('.carousel4, .carousel6, .carousel7').addClass('hidden');
         $('.carousel5').removeClass('hidden');
@@ -255,14 +254,13 @@ $(function() {
             slidesToShow: 2,
             arrows: true,
             responsive: [{
-                breakpoint: 767,
-                settings: {
-                  centerMode: true,
-                  centerPadding: '0%',
-                  slidesToShow: 1
-                }
+              breakpoint: 767,
+              settings: {
+                centerMode: true,
+                centerPadding: '0%',
+                slidesToShow: 1
               }
-            ]
+            }]
           });
         } catch (error) {
           console.log('already initialized');
@@ -279,19 +277,18 @@ $(function() {
             slidesToShow: 2,
             arrows: true,
             responsive: [{
-                breakpoint: 767,
-                settings: {
-                  centerMode: true,
-                  centerPadding: '0%',
-                  slidesToShow: 1
-                }
+              breakpoint: 767,
+              settings: {
+                centerMode: true,
+                centerPadding: '0%',
+                slidesToShow: 1
               }
-            ]
+            }]
           });
         } catch (error) {
           console.log('already initialized');
         }
-        
+
         break;
       case 3:
         $('.carousel4, .carousel6, .carousel5').addClass('hidden');
@@ -304,14 +301,13 @@ $(function() {
             slidesToShow: 2,
             arrows: true,
             responsive: [{
-                breakpoint: 767,
-                settings: {
-                  centerMode: true,
-                  centerPadding: '0%',
-                  slidesToShow: 1
-                }
+              breakpoint: 767,
+              settings: {
+                centerMode: true,
+                centerPadding: '0%',
+                slidesToShow: 1
               }
-            ]
+            }]
           });
         } catch (error) {
           console.log('already initialized');
