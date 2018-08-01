@@ -4,7 +4,7 @@
     <groupId>kia.platform</groupId>
     <packaging>pom</packaging>
     <name>KIA Platform</name>
-	<version>1.6.5</version>
+	<version>1.0.0</version>
 	
 	
 	<modules>
