@@ -34,7 +34,7 @@ module.exports = {
           options: {
             formatter: require("eslint/lib/formatters/stylish"),
             camelcase: true,
-            emitErrors: false,
+            emitErrors: true,
             failOnHint: false
           }
         }]
