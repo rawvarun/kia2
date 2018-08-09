@@ -116,7 +116,7 @@
                 <plugin>
                     <groupId>com.day.jcr.vault</groupId>
                     <artifactId>content-package-maven-plugin</artifactId>
-                    <version>0.0.20</version>
+                    <version>0.0.24</version>
                     <extensions>true</extensions>
                     <inherited>true</inherited>
                     <configuration>
@@ -752,12 +752,6 @@
 			    <version>2.18</version>
 			</dependency>
 			<dependency>
-				<groupId>com.adobe.acs</groupId>
-				<artifactId>acs-aem-commons-bundle</artifactId>
-				<version>3.13.0</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
 				<groupId>javax.mail</groupId>
 				<artifactId>mail</artifactId>
 				<version>1.4</version>
@@ -816,7 +810,7 @@
                 <repository>
                         <id>day-external-central</id>
                         <name>Day Central Repository</name>
-                        <url>http://repo.adobe.com/archiva/repository/day-central</url>
+                        <url>https://repo.adobe.com/archiva/repository/day-central</url>
                 </repository>
 
                 <repository>
@@ -832,7 +826,7 @@
                 <pluginRepository>
                         <id>day-external-central</id>
                         <name>Day Central Repository</name>
-                        <url>http://repo.adobe.com/archiva/repository/day-central</url>
+                        <url>https://repo.adobe.com/archiva/repository/day-central</url>
                 </pluginRepository>
                 <pluginRepository>
                         <id>adobe-public-releases</id>
